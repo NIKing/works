@@ -1,0 +1,147 @@
+.home-body {
+    width: 100%;
+    display: block;
+    background: url(../img/home-bg.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.home-mlao {
+    position: absolute;
+    top: 18%;
+    text-align: center;
+    width: 100%;
+}
+
+.home-mlao img {
+    /*left: 50%;*/
+    /*margin-left: -14%;*/
+    /*width: 25%;*/
+    width: 80px;
+    border-radius: 50%;
+}
+
+.home-imgName {
+    margin-top: 8px;
+    color: #663300;
+}
+
+.home-cet-content {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+}
+
+.home-cet-title {
+
+    /*eft: 50%;
+    margin-left: -90px;*/
+    margin-top: 0px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.home-cet {
+    position: absolute;
+    top: 20%;
+    /*width: 20%;*/
+    width: 60px;
+}
+
+.home-cent-4 {
+    left: 22%;
+}
+
+.home-cent-6 {
+    left: 59%;
+}
+
+/*.home-btn-startPlay{
+    position: absolute;
+    *//*top:60%;*//*
+    bottom: 23%;
+    left: 50%;
+    margin-left: -35%;
+    width: 70%;
+    height: 60px;
+    *//*background-color: #ff9900;*//*
+    background-color: #999999;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: TXJZHJ;
+    color: #fff;
+    font-size: 28px;
+    outline: none;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}*/
+.home-btn-startPlay {
+    position: absolute;
+    /*top: 60%;*/
+    bottom: 40px;
+    left: 50%;
+    margin-left: -112px;
+    /*width: 70%;*/
+    width: 224px;
+    height: 60px;
+    background: url(../img/start-game.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    border: none;
+}
+
+.home-tips {
+    position: absolute;
+    /*top:90%;*/
+    /*bottom: 8%;*/
+    /*bottom: 6%;*/
+    bottom: 10px;
+    /*left: 50%;
+    margin-left: -88px;*/
+    color: #ffffff;
+    font-size: 16px;
+
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-height: 375px) {
+    .home-mlao {
+        top: 40px;
+    }
+
+    .home-btn-startPlay {
+        margin-left: -30%;
+        width: 60%;
+        height: 40px;
+    }
+
+    .home-cet-content {
+        top: 180px;
+    }
+
+    .home-cet {
+        top: 15%;
+    }
+
+    .home-btn-startPlay {
+        height: 50px;
+        /*top: 49%;*/
+        bottom: 40px;
+    }
+}
+
+@media screen and (min-height: 590px) {
+    #btnStartPaly {
+        bottom: 25%;
+    }
+
+    .home-tips {
+        bottom: 10%;
+    }
+
+    .home-cet {
+        width: 80px;
+    }
+}

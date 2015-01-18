@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>#词霸收获之旅#你被CET搞疯了吗？！11.20-12.19与小词一起玩转四六级高频词</title>
+    <script type="text/javascript">
+         var userInfo = JSON.parse(localStorage.getItem("userBaseInfoForKingSoft"));
+         if(userInfo.cet == "4" || userInfo.cet == "6" ){
+            window.location.href = 'perform.html';
+         }
+    </script>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/home.css">
+</head>
+<body class='home-body'>
+<header>
+    <img src="img/logo1.png">
+    <a href="javascript:" id="exitBtn" style="margin-right:10px;">退出登录</a>
+</header>
+<article>
+    <div class="home-mlao">
+        <img id="homeUserHeaderImg" src="img/home-MLAO.png">
+
+        <p class="home-imgName">飞奔马里奥</p>
+    </div>
+    <div class="home-cet-content">
+        <p class="home-cet-title">请选择你要学习的项目</p>
+        <img class="home-cet home-cent-4" data-index="4" src="img/home-cet4.png">
+        <img class="home-cet home-cent-6" data-index="6" src="img/home-cet6.png">
+        <!-- <img class="home-btn-startPlay" id="btnStartPaly" src="img/home-btn-startPlay.png"></img> -->
+        <button class="home-btn-startPlay" id="btnStartPaly"></button>
+        <p class="home-tips">已经有<span id="home-people">0</span>位同学开始了</p>
+    </div>
+</article>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+<script type="text/javascript" src="js/heartBeat.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>

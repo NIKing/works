@@ -1,0 +1,244 @@
+﻿* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    font-family: "Times New Roman", STXihei, "华文细黑", serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, b, big, caption, cite, code, dfn, em, h1, h2, h3, h4, h5, h6, i, ins, small, strong, th, var, {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0
+}
+
+a {
+    color: #000000;
+    text-decoration: none
+}
+
+/***************引用字体****************/
+/*@font-face {
+    font-family: TXJZHJ;
+    src: url('TXJZHJ.ttf');
+}*/
+
+/************************************/
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+header h1 {
+    float: left;
+}
+
+header img {
+    width: 100px;
+    margin: 8px 0 0 8px;
+}
+
+header a {
+    display: block;
+    float: right;
+    padding: 5px 10px;
+    margin: 8px 8px 0 0;
+    background: #ffb001;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4em;
+    border-radius: 5px;
+}
+
+video{
+    display: none;
+}
+
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+#activityInfo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#activityInfo .fill-air {
+    height: 5%;
+}
+
+.activity-inner {
+    position: relative;
+    width: 83%;
+    margin: 5% auto;
+    border-radius: 5px;
+    background: #ffffff;
+    /*--*/
+    padding:5%;
+    height:70%;
+    overflow: hidden;
+    
+}
+
+#activityClose {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/activity-close.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.activity-inner h2 {
+    margin-bottom: 10px;
+}
+
+.activity-inner li {
+    line-height: 25px;
+}
+
+.shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.alert {
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.alert span {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #000000;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/*总分数*/
+.game-plan {
+    float: right;
+    margin: 8px 8px 0 0;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 1.6em;
+    border-radius: 5px;
+    background: #ffb001;
+}
+
+
+@media screen and (max-height: 505px) {
+   /* .activity-inner {
+        overflow-y: scroll;
+        height: 350px;
+    }
+
+    #activityInfo .fill-air {
+        height: 8%;
+    }*/
+}
+
+@media screen and (max-height: 450px) {
+    /*.activity-inner {
+        overflow-y: scroll;
+        height: 310px;
+    }
+
+    #activityInfo .fill-air {
+        height: 6%;
+    }*/
+}
+
+@media screen and (max-height: 400px) {
+  /*  .activity-inner {
+        overflow-y: scroll;
+        height: 300px;
+    }*/
+    .game-plan {
+        font-size: 1.4em;
+    }
+
+   /* #activityInfo .fill-air {
+        height: 2%;
+    }*/
+}
+
+@media screen and (max-height: 375px) {
+    header a {
+        font-size: 1.4em;
+    }
+
+    header img {
+        width: 80px;
+    }
+}
+
+.hide_div{
+	width: 105%;
+height: 95%;
+overflow-x: hidden;
+overflow-y: auto;
+margin-top: 0%;
+}

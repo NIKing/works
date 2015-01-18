@@ -1,0 +1,69 @@
+body {
+    background: url(../img/index-bg.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.index-tree {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+
+.index-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.login-btn {
+    display: block;
+    width: 65%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    color: #ffffff;
+    text-indent: 30px;
+}
+
+.main .fill-air {
+    height: 70%;
+}
+
+/*#wxLogin {*/
+/*background: url(../img/weixin-logo.png) no-repeat 30% center #00ce86;*/
+/*background-size: 22px;*/
+/*}*/
+
+#qqLogin {
+    margin-top: 40px;
+    background: url(../img/qq-logo.png) no-repeat 30% center #5ec6ff;
+    background-size: 18px;
+}
+
+@media screen and (max-height: 375px) {
+    .main .fill-air {
+        height: 75%;
+    }
+
+    #qqLogin {
+        margin-top: 23px;
+    }
+    .index-tree {
+        width: 70%;
+        margin-left: -35%;
+    }
+
+    .login-btn{
+        width: 55%;
+        height: 45px;
+        line-height: 45px;
+        font-size: 1.8em;
+        text-indent: 30px;
+    }
+}

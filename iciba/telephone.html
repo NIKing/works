@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>#词霸收获之旅#你被CET搞疯了吗？！11.20-12.19与小词一起玩转四六级高频词</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <style type="text/css">
+        .home-body {
+            width: 100%;
+            display: block;
+            background: url(img/home-bg.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .home-mlao {
+            position: absolute;
+            top: 18%;
+            text-align: center;
+            width: 100%;
+        }
+
+        .home-mlao img {
+            width: 80px;
+        }
+
+        .home-imgName {
+            margin-top: 8px;
+            color: #663300;
+        }
+
+        .home-cet-content {
+            position: absolute;
+            top: 55%;
+            width: 100%;
+            text-align: center;
+            bottom: 0px;
+        }
+
+        .home-cet-title {
+            margin-top: 0px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .home-btn-startPlay {
+            width: 140px;
+            height: 50px;
+            margin: 20px auto 0px;
+            background: url(img/next-hover.png) no-repeat 0 0;
+            background-size: 100% 100%;
+            border: none;
+        }
+
+        @media screen and (max-height: 375px) {
+            .home-cet-content {
+                top: 60%;
+            }
+
+            .home-btn-startPlay {
+                width: 140px;
+                height: 50px;
+                margin: 10px auto 0px;
+                background: url(img/next-hover.png) no-repeat 0 0;
+                background-size: 100% 100%;
+            }
+        }
+
+        #telephoneNum {
+            width: 220px;
+            margin-top: 20px;
+            padding: 8px 10px;
+            border: 2px solid #ff8b00;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body class='home-body'>
+<header>
+    <img src="img/logo1.png">
+    <a href="javascript:" id="exitBtn" style="margin-right:10px;">退出登录</a>
+</header>
+<article>
+    <div class="home-mlao">
+        <img src="img/home-MLAO.png">
+        <p class="home-imgName"></p>
+    </div>
+    <div class="home-cet-content">
+        <p class="home-cet-title">留下联系方式，方便中奖通知</p>
+        <p>
+            <input type="text" id="telephoneNum" placeholder="手机号"/>
+        </p>
+        <p>
+            <button class="home-btn-startPlay" id="btnStartPaly"></button>
+        </p>
+    </div>
+</article>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/heartBeat.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var userInfo = TempCache.getItem("userBaseInfoForKingSoft");
+
+        $('.home-mlao img').attr('src', userInfo.head_photo);
+        $('.home-imgName').text(userInfo.nickname);
+
+        $("#btnStartPaly").bind(EventStart, function () {
+            var phoneNum = $('#telephoneNum').val();
+
+            if (phoneNum.length != 11 || !(/\d{11}/).test(phoneNum)) {
+                SZRD_JS.alert('手机号码格式不对');
+                return;
+            }
+
+            var json = {
+                url: BaseUrl + 'recordphone.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    cc: userInfo.cc,
+                    user_id: userInfo.user_id,
+                    phone: phoneNum
+                }
+            };
+
+            SZRD_JS.ajax(json, function (data) {
+                if (data.status == 0) {
+                    // TempCache.setItemOfKingSoft("phone",phoneNum);
+                    window.location.href = 'home.html';
+                } else {
+                    SZRD_JS.alert(data.msg);
+                }
+            });
+        });
+
+        //退出登录
+        $('#exitBtn').on(EventStart, function () {
+            SZRD_JS.exitApp($(this));
+        });
+    });
+</script>
+</body>
+</html>

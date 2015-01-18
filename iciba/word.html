@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>#词霸收获之旅#你被CET搞疯了吗？！11.20-12.19与小词一起玩转四六级高频词</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/word.css">
+    <link rel="stylesheet" type="text/css" href="style/online.css">
+    <style type="text/css">
+        .fram {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="word-body">
+<header>
+    <img src="img/logo1.png">
+    <span class="game-plan" id="gamePlan">已收获0分</span>
+</header>
+<section class="fram">
+    <article class="word-center" id="wrap-word">
+        <span class="word-title"></span>
+        <div class="word-wrapQuestions">
+            <div class="new-question-wrap">
+                <span class="word-questions"></span>
+                <!-- <span class="word-questions">1. <span class="word-questions-paly"></span></span> -->
+                <ul class="word-ul-answer" id="wordAnswerList"></ul>
+            </div>
+            <div class="word-result">
+                <img class="word-result-img" src="img/word-success.png">
+                <span id="word-result-tips" class="word-result-tips"></span>
+                <span id="word-resultError-tips" class="word-result-tips word-resultError-tips"></span>
+                <button class="word-result-btnNext" id="btnNext"></button>
+            </div>
+        </div>
+
+        <div class="word-tips">
+            <p class="word-tips-bigTitle">游戏规则：</p>
+            <p class="word-tips-content">选择正确单词使句子完整。点击提交可检查回答是否正确：回答正确获取2分；回答错误没有分数并且不扣分。</p>
+        </div>
+    </article>
+
+    <article id="wrap-onlien" class="word-center" style="display: none;">
+        <span class="online-title">共2组  20分</span>
+
+        <div class="online-wrapQuestions">
+            <ul class="online-result" id="onlineResult"></ul>
+            <ul class="online-word" id="onlineWord"></ul>
+            <ul class="online-wordNote" id="onlineWordNote"></ul>
+        </div>
+        <button class="online-result-btnNext" id="btnNext"></button>
+        <div class="online-tips">
+            <p class="online-tips-bigTitle">游戏规则：</p>
+            <p class="online-tips-content">
+                点击单词和对应的中文释义即可连线；再次点击可以取消。正确则得分，不正确不扣分。
+            </p>
+        </div>
+    </article>
+</section>
+<audio id="audio"></audio>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js?=299"></script>
+<script type="text/javascript" src="js/heartBeat.js"></script>
+<script type="text/javascript" src="js/word.js?=444"></script>
+<script type="text/javascript" src="js/online.js"></script>
+</body>
+</html>

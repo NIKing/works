@@ -1,0 +1,477 @@
+body {
+    background: url(../img/apple-bg.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.main .fill-air {
+    height: 12%;
+}
+
+.apple-tree {
+    position: relative;
+    width: 300px;
+    height: 355px;
+    margin: 0 auto;
+    background: url(../img/apple-tree.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.basket {
+    position: absolute;
+    left: 25px;
+    bottom: -20px;
+    width: 90px;
+}
+
+#carWrap {
+    display: none;
+    position: absolute;
+    right: -10px;
+    bottom: -40px;
+    width: 135px;
+}
+
+#carWrap .car {
+    width: 100%;
+}
+
+#userImage {
+    position: absolute;
+    top: 17px;
+    left: 76px;
+    width: 30px;
+}
+
+#appleWrap img {
+    position: absolute;
+    width: 38px;
+}
+
+#apple1 {
+    top: 20px;
+    left: 115px;
+}
+
+#apple2 {
+    top: 30px;
+    left: 205px;
+}
+
+#apple3 {
+    top: 85px;
+    left: 25px;
+}
+
+#apple4 {
+    top: 95px;
+    left: 95px;
+}
+
+#apple5 {
+    top: 85px;
+    left: 170px;
+}
+
+#apple6 {
+    top: 183px;
+    left: 26px;
+}
+
+#apple7 {
+    top: 160px;
+    left: 120px;
+}
+
+#apple8 {
+    top: 145px;
+    left: 195px;
+}
+
+#apple9 {
+    top: 176px;
+    left: 243px;
+}
+
+#apple10 {
+    top: 228px;
+    left: 195px;
+}
+
+.game-info {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 90%;
+    margin-left: -46.5%;
+    padding: 10px 1.5%;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.game-title {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.game-desc {
+    line-height: 20px;
+}
+
+/*#wordStartBtn {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+    background: #ffb001;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-family: TXJZHJ;
+    line-height: 60px;
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+}*/
+
+#wordStartBtn {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    /*width: 70%;*/
+    width: 224px;
+    height: 60px;
+    margin-left: -112px;
+    background: url("../img/start-word.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#appleWrap img {
+    cursor: pointer;
+}
+
+#wordWrap {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 87%;
+    margin-left: -46.5%;
+    padding: 20px 3% 100px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+@media screen and (max-height: 372px) {
+    #wordWrap {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 87%;
+        margin-left: -46.5%;
+        padding: 20px 3% 100px;
+        background: #ffffff;
+        border-radius: 5px;
+        /*height: 45%;*/
+    }
+}
+
+.word-title {
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+#word {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Microsoft Yahei", "\5B8B\4F53", Tahoma;
+    font-size: 3em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#soundmark {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: "Microsoft Yahei", "\5B8B\4F53", Tahoma;
+    font-size: 1.8em;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+#playBtn {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#playBtn img {
+    display: block;
+    width: 20px;
+}
+
+.translate {
+    margin-top: 10px;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.example {
+    margin-top: 10px;
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+
+.example-title {
+    display: block;
+    font-size: 1.3em;
+}
+
+.harvest {
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+#info {
+    margin-bottom: 10px;
+    color: #ff8b00;
+    text-align: center;
+}
+
+#info span {
+    display: block;
+}
+
+#info span:nth-child(1) {
+    font-size: 1.4em;
+}
+
+#info span:nth-child(2) {
+    font-family: "Microsoft Yahei", "\5B8B\4F53", Tahoma;
+    font-size: 3em;
+}
+
+/*#harvestBtn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background: #ff8b00;
+    color: #ffffff;
+    font-family: TXJZHJ;
+    font-size: 3em;
+}*/
+
+#harvestBtn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+}
+
+#wordNum {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+@media screen and (max-height: 400px) {
+    .game-plan {
+        font-size: 1.4em;
+    }
+
+    .main .fill-air {
+        height: 5%;
+    }
+
+    .apple-tree {
+        width: 220px;
+        height: 270px;
+    }
+
+    #appleWrap img {
+        width: 30px;
+    }
+
+    #apple1 {
+        top: 15px;
+        left: 90px;
+    }
+
+    #apple2 {
+        top: 22px;
+        left: 155px;
+    }
+
+    #apple3 {
+        top: 55px;
+        left: 28px;
+    }
+
+    #apple4 {
+        top: 75px;
+        left: 75px;
+    }
+
+    #apple5 {
+        top: 66px;
+        left: 132px;
+    }
+
+    #apple6 {
+        top: 136px;
+        left: 17px;
+    }
+
+    #apple7 {
+        top: 125px;
+        left: 82px;
+    }
+
+    #apple8 {
+        top: 110px;
+        left: 143px;
+    }
+
+    #apple9 {
+        top: 136px;
+        left: 182px;
+    }
+
+    #apple10 {
+        top: 159px;
+        left: 144px;
+    }
+
+    .basket {
+        width: 60px;
+        bottom: 0px;
+    }
+
+    #carWrap {
+        right: -30px;
+        bottom: -10px;
+        width: 110px;
+    }
+
+    #userImage {
+        top: 15px;
+        left: 63px;
+        width: 23px;
+    }
+
+    .game-info {
+        bottom: 5px;
+    }
+
+    .word-info {
+        overflow-y: scroll;
+        max-height: 190px;
+    }
+}
+
+@media screen and (min-height: 400px) and (max-height: 500px) {
+    .game-plan {
+        font-size: 1.4em;
+    }
+
+    .main .fill-air {
+        height: 15%;
+    }
+
+    .apple-tree {
+        width: 220px;
+        height: 270px;
+    }
+
+    #appleWrap img {
+        width: 30px;
+    }
+
+    #apple1 {
+        top: 15px;
+        left: 90px;
+    }
+
+    #apple2 {
+        top: 22px;
+        left: 155px;
+    }
+
+    #apple3 {
+        top: 55px;
+        left: 28px;
+    }
+
+    #apple4 {
+        top: 75px;
+        left: 75px;
+    }
+
+    #apple5 {
+        top: 66px;
+        left: 132px;
+    }
+
+    #apple6 {
+        top: 136px;
+        left: 17px;
+    }
+
+    #apple7 {
+        top: 125px;
+        left: 82px;
+    }
+
+    #apple8 {
+        top: 110px;
+        left: 143px;
+    }
+
+    #apple9 {
+        top: 136px;
+        left: 182px;
+    }
+
+    #apple10 {
+        top: 159px;
+        left: 144px;
+    }
+
+    .basket {
+        width: 60px;
+        bottom: 0px;
+    }
+
+    #carWrap {
+        right: -30px;
+        bottom: -10px;
+        width: 110px;
+    }
+
+    #userImage {
+        top: 15px;
+        left: 63px;
+        width: 23px;
+    }
+
+    .game-info {
+        bottom: 5px;
+    }
+
+    .word-info {
+        overflow-y: scroll;
+        max-height: 190px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #playBtn img {
+        width: 25px;
+    }
+}

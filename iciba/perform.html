@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>#词霸收获之旅#你被CET搞疯了吗？！11.20-12.19与小词一起玩转四六级高频词</title>
+    <link rel="stylesheet" href="style/common.css"/>
+    <link rel="stylesheet" href="style/perform.css"/>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201" charset="utf-8"></script>
+
+    <style type="text/css">
+    #bdshare{
+        width: 100%;
+        display: block;
+        /*height: 30px;*/
+    }
+    #bdshare a{
+        width: 100%;
+        /*display: block;*/
+        font-size: 20px;
+        vertical-align: bottom;
+    }
+    </style>
+</head>
+<body>
+<!-- 主页面 -->
+<section class="perform" id="perform_home">
+    <div class="fill-air"></div>
+    <div class="rankingList">
+        <p>总排行榜名次</p>
+        <strong></strong>
+    </div>
+    <div class="word">
+        <p></p>
+        <strong></strong>
+    </div>
+    <div class="integral">
+        <p>积分</p>
+        <strong></strong>
+    </div>
+    <div class="t_task" id="overWrap">
+        <p>
+            今日任务已完成
+            <br/>
+            明天继续加油吧
+        </p>
+    </div>
+    <div class="t_task" id="chongciWrap">
+        <p>开始冲刺</p>
+    </div>
+</section>
+
+<!--顶部信息-->
+<header>
+    <h1><img src="img/logo2.png" alt="金山词霸"/></h1>
+    <a href="javascript:" id="activityBtn">活动细则</a>
+    <a href="javascript:" id="exitBtn" style="margin-right:10px;">退出登录</a>
+</header>
+
+<!-- 历程 -->
+<section class="perform_myHistory">
+    <div class="perform_myHistory_wrap">
+        <span class="perform_myHistory_title"></span>
+        <span class="perform_myHistory_colse"></span>
+        <table>
+            <thead>
+            <tr>
+                <th>日</th>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td date="11" diff="0">20</td>
+                <td date="11" diff="1">21</td>
+                <td date="11" diff="2">22</td>
+            </tr>
+            <tr>
+                <td date="11" diff="3">23</td>
+                <td date="11" diff="4">24</td>
+                <td date="11" diff="5">25</td>
+                <td date="11" diff="6">26</td>
+                <td date="11" diff="7">27</td>
+                <td date="11" diff="8">28</td>
+                <td date="11" diff="9">29</td>
+            </tr>
+            <tr>
+                <td date="11" diff="10">30</td>
+                <td date="12" diff="11">1</td>
+                <td date="12" diff="12">2</td>
+                <td date="12" diff="13">3</td>
+                <td date="12" diff="14">4</td>
+                <td date="12" diff="15">5</td>
+                <td date="12" diff="16">6</td>
+            </tr>
+            <tr>
+                <td date="12" diff="17">7</td>
+                <td date="12" diff="18">8</td>
+                <td date="12" diff="19">9</td>
+                <td date="12" diff="20">10</td>
+                <td date="12" diff="21">11</td>
+                <td date="12" diff="22">12</td>
+                <td date="12" diff="23">13</td>
+            </tr>
+            <tr>
+                <td date="12" diff="24">14</td>
+                <td date="12" diff="25">15</td>
+                <td date="12" diff="26">16</td>
+                <td date="12" diff="27">17</td>
+                <td date="12" diff="28">18</td>
+                <td date="12" diff="29">19</td>
+                <td style="color: red">20</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <span class="perform_myHistory_tips"></span>
+    </div>
+</section>
+<!-- 分享 -->
+<section class="perform_share" id="performShare">
+    <span class="perform_share_title"></span>
+    <span class="perform_share_close"></span>
+
+    <div id="bdshare"  class="bdshare_t get-codes-bdshare bdsharebuttonbox" data="{'text': '你被CET搞疯了吗？！1200个高频词汇，300道考题例句，30天考前冲刺，11.20-12.19与词霸一起“玩”单词抽大奖，你也一起来吧~ http://46.iciba.com ','pic':'http://46.iciba.com/img/shareImgSmall.jpg','url':'http://46.iciba.com/', 'title':'词霸收获之旅'}">
+
+<!--         <a class="bds_tsina">新浪微博</a>
+        <a class="bds_qzone">QQ空间</a> -->
+
+
+        <div id="perform_share_QQZone">
+            <img src="img/perform_share_QQZone.png">
+            <!-- <span>分享到QQ空间</span> -->
+            <a class="bds_qzone">分享到QQ空间</a>
+        </div>
+        <div id="perform_share_sina">
+            <img src="img/perform_share_sina.png">
+            <!-- <span>分享到新浪微博</span> -->
+            <a class="bds_tsina">分享到新浪微博</a>
+        </div>
+    </div>
+</section>
+<!-- 底部导航 -->
+<footer class="perform_footer">
+    <ul>
+        <li id="myHistoryBtn">
+            <img src="img/p_img01.png"/>
+
+            <p>我的历程</p>
+        </li>
+        <li id="rankBtn">
+            <img src="img/p_img02.png"/>
+
+            <p>我的榜单</p>
+        </li>
+        <li id="btnShare">
+            <img src="img/p_img03.png"/>
+
+            <p>我要分享</p>
+        </li>
+    </ul>
+</footer>
+<!-- 榜单 -->
+<section class="rank-info" id="rankInfo">
+    <div class="rank-title"></div>
+    <span class="perform_rankInfo_close"></span>
+    <ul>
+        <li>
+            <img src="img/no1.png" class="no-img"/>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">飞奔</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral">456</span>
+        </li>
+        <li>
+            <img src="img/no2.png" class="no-img"/>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">的</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral">456</span>
+        </li>
+        <li>
+            <img src="img/no3.png" class="no-img"/>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">马里奥</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral">456</span>
+        </li>
+        <li>
+            <span class="rank-number">4</span>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">飞奔的马里奥</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral">456</span>
+        </li>
+        <li>
+            <span class="rank-number">5</span>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">飞奔的马里奥</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral"></span>
+        </li>
+        <li class="rank-omit">
+            <img src="img/omit.png"/>
+        </li>
+        <li>
+            <span class="rank-number"></span>
+            <img src="img/home-MLAO.png" class="user-img"/>
+            <span class="user-name">飞奔的马里奥</span>
+            <img src="img/rank-apple.png" class="rank-apple"/>
+            <span class="rank-integral"></span>
+        </li>
+    </ul>
+</section>
+<!-- 抽奖 -->
+<section class="lottery-wrap" id="lotteryWrap">
+    <a href="javascript:" id="lotteryCloseBtn">
+        <img src="img/activity-close.png"/>
+    </a>
+
+    <div class="lottery-title">抽个奖，试试手气</div>
+    <div class="apple-wrap">
+        <img src="img/lottery-apple.png"/>
+        <img src="img/lottery-apple.png"/>
+        <img src="img/lottery-apple.png"/>
+    </div>
+    <div class="lottery-description">请选择一个苹果</div>
+    <img src="img/no-prize.png" id="noPrize"/>
+    <img src="img/congratulations.png" id="congratulations"/>
+
+    <div id="prizeInfo"></div>
+    <img src="img/getPrize.png" id="getPrizeBtn"/>
+
+    <div id="fillTelephone">
+        <input type="text" class="fillInputWrap" id="telephoneNum" placeholder="请输入手机号码"/>
+        <img src="img/okBtn.png" id="chongzhiBtn" class="ok-btn"/>
+    </div>
+    <div id="prizeNumWrap">
+        <!--<img src="img/chongzhi.png" id="prizeNumTitle"/>-->
+
+        <div id="prizeNum">充值卡将在1-3天内到帐</div>
+        <div style="text-align: center;font-size: 1.8em;line-height: 1.5em;">
+            如有问题请联系：010-62927777转6340/6283
+        </div>
+    </div>
+
+    <div id="fillAddress">
+        <input type="text" class="fillInputWrap" id="namePrize" placeholder="请输入姓名"/>
+        <input type="text" class="fillInputWrap" id="telephonePrize" placeholder="请输入手机号码"/>
+        <input type="text" class="fillInputWrap" id="addressPrize" placeholder="请输入您的联系地址"/>
+        <img src="img/okBtn.png" id="shiwuBtn" class="ok-btn"/>
+    </div>
+    <div id="shiwuPrizeWrap">
+        奖品将在与你手机确认后尽快寄出，如有问题
+        请联系：010-62927777转6340/6283
+    </div>
+</section>
+
+<section id="qiandaoWrap">
+    <div class="perform_myHistory_wrap">
+        <span class="perform_myHistory_title qiandao_title"></span>
+        <span class="perform_myHistory_colse" id="qiandaoClose"></span>
+        <table>
+            <thead>
+            <tr>
+                <th>日</th>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td date="11" _hasDone="0" diff="0">20</td>
+                <td date="11" _hasDone="0" diff="1">21</td>
+                <td date="11" _hasDone="0" diff="2">22</td>
+            </tr>
+            <tr>
+                <td date="11" _hasDone="0" diff="3">23</td>
+                <td date="11" _hasDone="0" diff="4">24</td>
+                <td date="11" _hasDone="0" diff="5">25</td>
+                <td date="11" _hasDone="0" diff="6">26</td>
+                <td date="11" _hasDone="0" diff="7">27</td>
+                <td date="11" _hasDone="0" diff="8">28</td>
+                <td date="11" _hasDone="0" diff="9">29</td>
+            </tr>
+            <tr>
+                <td date="11" _hasDone="0" diff="10">30</td>
+                <td date="12" _hasDone="0" diff="11">1</td>
+                <td date="12" _hasDone="0"diff="12">2</td>
+                <td date="12" _hasDone="0"diff="13">3</td>
+                <td date="12" _hasDone="0"diff="14">4</td>
+                <td date="12" _hasDone="0"diff="15">5</td>
+                <td date="12" _hasDone="0"diff="16">6</td>
+            </tr>
+            <tr>
+                <td date="12" _hasDone="0"diff="17">7</td>
+                <td date="12" _hasDone="0"diff="18">8</td>
+                <td date="12" _hasDone="0"diff="19">9</td>
+                <td date="12" _hasDone="0"diff="20">10</td>
+                <td date="12" _hasDone="0"diff="21">11</td>
+                <td date="12" _hasDone="0"diff="22">12</td>
+                <td date="12" _hasDone="0"diff="23">13</td>
+            </tr>
+            <tr>
+                <td date="12" _hasDone="0"diff="24">14</td>
+                <td date="12" _hasDone="0"diff="25">15</td>
+                <td date="12" _hasDone="0"diff="26">16</td>
+                <td date="12" _hasDone="0"diff="27">17</td>
+                <td date="12" _hasDone="0"diff="28">18</td>
+                <td date="12" _hasDone="0"diff="29">19</td>
+                <td style="color: red">20</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <span class="perform_myHistory_tips">
+            今日已签到
+        </span>
+    </div>
+</section>
+
+<script src="js/jquery.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="js/heartBeat.js"></script>
+<script type="text/javascript" id="bdshare_js" data="type=tools&uid=6611560" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script src="js/perform.js?v=4"></script>
+
+</body>
+</html>

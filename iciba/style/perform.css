@@ -1,0 +1,708 @@
+﻿body {
+    background: url(../img/apple-bg.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.perform {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.fill-air {
+    height: 14%;
+}
+
+.rankingList {
+    width: 45%;
+    /*height: 150px;*/
+    height: 25%;
+    margin: 5% auto;
+    background: #42c4f6;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.rankingList p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.rankingList strong {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 5.5em;
+}
+
+.word {
+    float: right;
+    width: 30%;
+    height: 80px;
+    margin-right: 5%;
+    margin-top: -60px;
+    background: #09c89f;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.word p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.word strong {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 3em;
+}
+
+.integral {
+    width: 30%;
+    height: 80px;
+    margin-left: 5%;
+    margin-top: -40px;
+    background: #ffc444;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.integral p {
+    text-align: center;
+    font-size: 1.6em;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.integral strong {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 3em;
+}
+
+.t_task {
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    width: 65%;
+    height: 55px;
+    margin-left: -32.5%;
+    background: #ff8b00;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    line-height: 55px;
+    left: 50%;
+}
+
+.t_task p {
+    width: 49%;
+    margin: 13px auto 0;
+    text-align: center;
+    font-size: 1.6em;
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+#overWrap p {
+    font-size: 1.2em;
+    line-height: normal;
+}
+
+#chongciWrap p {
+    width: auto;
+    margin: 18px auto 0;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    font-family: "微软雅黑";
+    margin: 0px auto;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 13px;
+}
+
+footer ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer ul li {
+    width: 33%;
+    float: left;
+    position: relative;
+}
+
+footer ul li i {
+    display: block;
+    width: 90px;
+    height: 45px;
+    line-height: 40px;
+    background: url(../img/share_bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -70%;
+    right: 5%;
+    font-style: normal;
+    color: #08c628;
+}
+
+footer ul li p {
+    width: 100%;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    font-family: "微软雅黑";
+}
+
+footer ul li img {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+}
+
+/*******我的历程******/
+.perform_myHistory {
+    display: none;
+}
+
+.perform_myHistory_title {
+    display: block;
+    width: 130px;
+    height: 30px;
+    margin: -45px auto 0px;
+    /* font-size: 22px;
+     font-family: TXJZHJ;
+     color: #663300;*/
+    background: url("../img/my-history.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.perform_myHistory_wrap {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 275px;
+}
+
+#qiandaoWrap .perform_myHistory_wrap {
+    height: 295px;
+}
+
+table {
+    width: 240px;
+    height: 65%;
+    margin: 45px auto 0px;
+    color: #663300;
+}
+
+table, th, td {
+    border: 1px solid #522d14;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    width: 34.2px;
+    height: 30px;
+}
+
+thead th {
+    text-align: center;
+}
+
+table tr td {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+/*.perform_table_td {*/
+/*background: url(../img/perform_calendar_fail.png) 50% 50% no-repeat;*/
+/*background-size: 40% 40%;*/
+/*}*/
+
+.perform_myHistory_tips {
+    font-size: 20px;
+    font-family: TXJZHJ;
+    color: #ff6600;
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 10px;
+}
+
+/*******分享************/
+.perform_share {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    margin-left: -47%;
+    width: 94%;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 225px;
+    text-align: center;
+    display: none;
+}
+
+.perform_share_title {
+    display: block;
+    width: 130px;
+    height: 30px;
+    margin: 20px auto 30px;
+    /*font-size: 22px;*/
+    /*font-family: TXJZHJ;*/
+    /*color: #663300;*/
+    background: url("../img/my-share.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.perform_share div {
+    overflow: hidden;
+    margin-top: 0px;
+    padding-right: 5%;
+    text-align: center;
+
+}
+#perform_share_sina{
+    margin-top: 20px;
+}
+.perform_share div img {
+    width: 34px;
+    vertical-align: middle;
+}
+
+.perform_share div span {
+    display: inline-block;
+    width: 150px;
+    font-family: Arial;
+    font-size: 2em;
+    color: #663300;
+    vertical-align: middle;
+}
+
+.perform_rankInfo_close,
+.perform_myHistory_colse,
+.perform_share_close {
+    background: url(../img/activity-close.png) 50% 0 no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 0px;
+}
+
+/************榜单************/
+.rank-info {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 93%;
+    margin-left: -47.25%;
+}
+
+.rank-title {
+    /*text-align: center;
+    font-family: TXJZHJ;
+    font-size: 3.6em;
+    color: #522d14;*/
+    width: 130px;
+    height: 30px;
+    margin: 0 auto 10px;
+    background: url("../img/my-rank.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+.rank-info ul {
+    padding: 15px 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.rank-info li {
+    margin-top: 10px;
+}
+
+.rank-info li:last-child {
+    margin-top: 0px;
+}
+
+.rank-info ul span {
+    display: inline-block;
+}
+
+.no-img {
+    width: 30px;
+    margin: 0px 15px;
+    vertical-align: middle;
+}
+
+.rank-number {
+    width: 60px;
+    text-align: center;
+    font-family: TXJZHJ;
+    font-size: 1.8em;
+    color: #522d14;
+    vertical-align: middle;
+}
+
+.user-name {
+    text-align: center;
+    width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.user-img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.rank-apple {
+    width: 30px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 375px) {
+    .rank-apple {
+        display: none;
+    }
+}
+
+.rank-integral {
+    width: 65px;
+    font-family: TXJZHJ;
+    font-size: 2em;
+    color: #ff8b00;
+    vertical-align: middle;
+}
+
+li.rank-omit {
+    height: 20px;
+    margin-top: 0px;
+}
+
+li.rank-omit img {
+    margin-left: -225px;
+    height: 100%;
+}
+
+.perform_rankInfo_close {
+    top: 50px;
+}
+
+/*****************/
+.lottery-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%;
+    margin-top: -100px;
+    padding: 30px 0px 20px;
+    border-radius: 10px;
+    background: #e4f6f8;
+    display: none;
+}
+
+#lotteryCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+}
+
+#lotteryCloseBtn img {
+    width: 100%;
+}
+
+.lottery-title {
+    font-family: TXJZHJ;
+    font-size: 2em;
+    color: #522d14;
+    text-align: center;
+}
+
+.apple-wrap {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.apple-wrap img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.lottery-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    color: #08c628;
+}
+
+#noPrize {
+    display: none;
+    width: 170px;
+    margin: 20px auto 0;
+}
+
+#congratulations {
+    display: none;
+    width: 110px;
+    margin: 20px auto 0;
+}
+
+#prizeInfo {
+    margin-top: 10px;
+    font-family: Arial;
+    text-align: center;
+    font-size: 3.5em;
+    color: #ff8b00;
+}
+
+#getPrizeBtn {
+    display: none;
+    width: 150px;
+    margin: 20px auto 0px;
+}
+
+.ok-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto 0px;
+}
+
+#fillTelephone {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fillInputWrap {
+    border: 1px solid #ff8b00;
+    border-radius: 5px;
+}
+
+#telephoneType {
+    width: 80px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+#telephoneNum {
+    width: 150px;
+    height: 28px;
+    text-indent: 5px;
+}
+
+#prizeNumWrap {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    background: #e4f6f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#prizeNumTitle {
+    display: block;
+    width: 110px;
+    margin: 20px auto 0px;
+}
+
+#prizeNum {
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 2em;
+    color: #ff8b00;
+}
+
+#fillAddress {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    background: #e4f6f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#namePrize, #telephonePrize, #addressPrize {
+    height: 28px;
+    text-indent: 5px;
+}
+
+#namePrize {
+    width: 80px;
+    margin-right: 10px;
+}
+
+#telephonePrize {
+    width: 150px;
+}
+
+#addressPrize {
+    margin-top: 10px;
+    width: 245px;
+}
+
+#shiwuPrizeWrap {
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    background: #e4f6f8;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+#qiandaoWrap {
+    display: none;
+}
+
+.qiandao_title {
+    margin: 10px auto;
+    background-image: url(../img/qinadao.png);
+}
+
+#qiandaoWrap table {
+    margin-top: 0px;
+}
+
+
+
+@media screen and (max-height: 480px) {
+    /******我的历程*****/
+    .perform_myHistory_wrap {
+        top: 20%;
+        height: 273px;
+    }
+
+    .perform_myHistory_wrap table tr td {
+        width: 24.2px;
+        height: 20px;
+    }
+
+    .perform_myHistory_tips {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 375px) {
+    .fill-air {
+        height: 10%;
+    }
+
+    .rankingList {
+        height: 110px;
+    }
+
+    .rankingList p {
+        margin-top: 20px;
+    }
+
+    .word {
+        height: 70px;
+        margin-right: 5%;
+        margin-top: -20%;
+    }
+
+    .integral {
+        height: 70px;
+        margin-left: 5%;
+        margin-top: -15%;
+    }
+
+    .integral p {
+        margin-top: 15px;
+    }
+
+    .t_task {
+        margin-top: 15px;
+    }
+
+    footer {
+        bottom: 5px;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    .rank-info {
+        top: 10%;
+    }
+
+    .rank-info ul {
+        overflow-y: scroll;
+        height: 270px;
+        padding: 20px 5px 0px;
+    }
+
+    /******我的历程*****/
+    .perform_myHistory_wrap {
+        top: 24%;
+        height: 270px;
+    }
+
+    #qiandaoWrap .perform_myHistory_wrap {
+        height: 285px;
+    }
+
+    .perform_myHistory_wrap table tr td {
+        width: 24.2px;
+        height: 30px;
+    }
+
+    .perform_myHistory_tips {
+        bottom: 1px;
+    }
+
+    .perform_myHistory_colse {
+        background-size: 10px 10px;
+    }
+
+    /*********我的分享*******/
+
+
+
+
+    .perform_share_title {
+        font-size: 20px;
+    }
+
+    #qiandaoWrap .perform_myHistory_wrap {
+        top: 20%;
+    }
+}
+

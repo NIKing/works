@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>#词霸收获之旅#你被CET搞疯了吗？！11.20-12.19与小词一起玩转四六级高频词</title>
+    <link rel="stylesheet" href="style/common.css"/>
+    <link rel="stylesheet" href="style/apple.css?v=2"/>
+</head>
+<body>
+<header>
+    <h1><img src="img/logo2.png" alt="金山词霸"/></h1>
+    <span class="game-plan" id="gamePlan">已收获0分</span>
+</header>
+<section class="main">
+    <div class="fill-air"></div>
+    <div class="apple-tree">
+        <img src="img/basket.png" class="basket" id="basket"/>
+
+        <div id="carWrap">
+            <img src="img/car.png" class="car" id="car"/>
+            <img src="img/home-MLAO.png" id="userImage"/>
+        </div>
+        <div id="appleWrap">
+            <img src="img/apple1.png" id="apple1"/>
+            <img src="img/apple2.png" id="apple2"/>
+            <img src="img/apple3.png" id="apple3"/>
+            <img src="img/apple4.png" id="apple4"/>
+            <img src="img/apple5.png" id="apple5"/>
+            <img src="img/apple6.png" id="apple6"/>
+            <img src="img/apple7.png" id="apple7"/>
+            <img src="img/apple8.png" id="apple8"/>
+            <img src="img/apple9.png" id="apple9"/>
+            <img src="img/apple10.png" id="apple10"/>
+        </div>
+    </div>
+    <div id="wordWrap">
+        <div class="word-info">
+            <div class="word-title">
+                <span id="word"></span>
+                <span id="soundmark"></span>
+                <a href="javascript:" id="playBtn">
+                    <img src="img/play-btn1.png"/>
+                </a>
+                <span id="wordNum"></span>
+            </div>
+            <div class="translate" id="translate"></div>
+            <div class="example">
+                <span class="example-title">考点</span>
+                <span id="exampleSentence"></span>
+            </div>
+        </div>
+        <div class="harvest">
+            <div id="info"></div>
+            <a href="javascript:" id="harvestBtn"></a>
+        </div>
+    </div>
+    <a href="javascript:" id="wordStartBtn"></a>
+</section>
+<audio id="audio"></audio>
+<div class="game-info" id="gameInfoWrap">
+    <div class="game-title">游戏规则：</div>
+    <div class="game-desc">点击树上苹果可收获一个高频词，总计40个，全部收获完成后才可进入单词考核。</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/common.js?v=3"></script>
+<script type="text/javascript" src="js/heartBeat.js?v=1"></script>
+<script src="js/apple.js?v=230"></script>
+</body>
+</html>

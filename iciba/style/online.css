@@ -1,0 +1,182 @@
+﻿.wrap-onlien {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.online-body {
+    background: url(../img/word-bg.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    color: #663300;
+}
+
+.online-title {
+    font-family: TXJZHJ;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 21%;
+    left: 9%;
+}
+
+.online-wrapQuestions {
+    position: absolute;
+    width: 94%;
+    height: 42%;
+    /*height: 273px;*/
+    top: 27%;
+    left: 50%;
+    margin-left: -47%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.online-word {
+    float: left;
+    width: 43%;
+    margin-left: 7%;
+    /*text-align: center;*/
+}
+
+.online-wordNote {
+    float: right;
+    width: 50%;
+    /*text-align: center;*/
+}
+
+.online-result {
+    position: absolute;
+    width: 5%;
+    /*margin-top: 10%;*/
+    margin-top: 15px;
+    margin-left: 2%;
+    display: none;
+}
+
+.online-result li img {
+    width: 10px;
+}
+
+.online-result li,
+.online-word li,
+.online-wordNote li {
+    /*text-align: center;*/
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.online-wordNote li {
+    margin-left: 10%;
+}
+
+.online-wordNote li:first-child,
+.online-word li:first-child {
+    margin-top: 15px;
+}
+
+.online-word li span,
+.online-wordNote li span {
+    /*margin-left: 20%;*/
+    height: 30px;
+    /*text-align: center;*/
+    display: inline-block;
+
+    width: 90%;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.online-word li span {
+    text-align: right;
+    /*width: 60%;*/
+    width: 70%;
+    overflow: hidden;
+}
+
+/*游戏规则*/
+.online-tips {
+    position: absolute;
+    overflow: hidden;
+    width: 94%;
+    height: 17%;
+    background-color: #fff;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -47%;
+    bottom: 5%;
+    padding-bottom: 5px;
+}
+
+.online-tips-bigTitle {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+    /*margin: 0px auto;*/
+}
+
+.online-tips-content {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*点击按钮*/
+.online-result-btnNext {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    /*margin-left: -22%;*/
+    margin-left: -70px;
+    height: 50px;
+    /*width: 44%;*/
+    width: 140px;
+    background: url("../img/submit.png") no-repeat 0 0;
+    background-size: 100% 100%;
+    border: none;
+    /*font-family: TXJZHJ;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    *//*line-height: 8%;*//*
+    *//*background-color: #ff9900;*//*
+    background-color: #999999;
+    color: #ffffff;
+    outline: none;
+    font-size: 16px;*/
+}
+
+@media screen and (max-height: 375px) {
+    .online-wrapQuestions {
+        top: 60px;
+        height: 180px;
+    }
+
+    .online-wordNote li:first-child,
+    .online-word li:first-child {
+        margin-top: 5px;
+    }
+
+    #btnNext {
+        top:58%;
+    }
+
+    .online-result {
+        margin-top: 2%;
+    }
+
+    .online-title {
+        top: 37px;
+    }
+
+    .online-tips {
+        height: 68px;
+        bottom: 9px;
+        padding-bottom: 0px;
+    }
+}
