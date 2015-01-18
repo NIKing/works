@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>首页</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="home.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>米米</h1>
+    </header>
+    <section class="con_main" id='iScroll'>
+        <div id="scrollInner">
+            <div class="ad_wrap">
+                <div id="adWrap">
+                    <ul>
+                        <!--<li>
+                            <img src="img/home_ad.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/home_ad.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/home_ad.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/home_ad.jpg" />
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="ad_btn_wrap">
+                    <!--<a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>-->
+
+                </div>
+            </div>
+            <ul class="btn_wrap">
+                <li>
+                    <nav class="btn1" ev="home_zhidemai">
+                        <span id="btn1"></span>
+                        <span>值得买</span>
+                    </nav>
+                    <nav class="btn2" ev="home_guanggaozhuanqian">
+                        <span id="btn2"></span>
+                        <span>广告赚钱</span>
+                    </nav>
+                    <nav class="btn3" ev="home_woyaotuijian">
+                        <span id="btn3"></span>
+                        <span>我要推荐</span>
+                    </nav>
+                </li>
+                <li>
+                    <nav class="btn4" ev="home_paihangbang">
+                        <span id="btn4"></span>
+                        <span>排行榜</span>
+                    </nav>
+                    <nav class="btn5" ev="home_woyaotixian">
+                        <span id="btn5"></span>
+                        <span>我要提现</span>
+                    </nav>
+                    <nav class="btn6" ev="home_yaoqinghaoyou">
+                        <span id="btn6"></span>
+                        <span>邀请好友</span>
+                    </nav>
+                </li>
+            </ul>
+            <ul class="info_wrap">
+                <li>
+                    <div ev="home_zongmibi">
+                        <span>总米币</span>
+                        <em class="line Num-type" id='totalLeBi'></em>
+                    </div>
+                    <div ev="home_zongfensi">
+                        <span>总粉丝</span>
+                        <!--<a href="fans_direct.html">
+                            <em class="line Num-type" id='totalFans'></em>
+                        </a>-->
+                            <em class="line Num-type" id='totalFans'></em>
+                    </div>
+                </li>
+                <li>
+                    <div ev="home_zuorishouyi">
+                        <span>昨日米币收益</span>
+                        <em id='newLebi' class="Num-type"></em>
+                    </div>
+                    <div ev="home_zuorifensi">
+                        <span>昨日新增粉丝</span>
+                        <em id='newFans' class="Num-type"></em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <nav class="hover" ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav  ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'>
+                <!-- 添加的部分 -->
+                <em class='message_num'></em>
+                <!-- 添加的部分 -->
+            </span>
+            <span>个人中心</span>
+        </nav>
+    </footer>
+
+    <section class='guide_pic_wrap' id="guide1" style="display: none">
+        <!--<img src='img/index_1.png' class='guide_pic' style='top:169px;left:28px;width:265px;' />-->
+        <img src='img/index_1.png' class='guide_pic' style='top:0px;left:0px;width:100%;' />
+        <div style="height: 0px"><div class="guide_btn1" id='guide_next1'></div></div>
+       <!-- <a href='javascript:;' class='guide_next_btn' style='top:435px;left:30%;' id='guide_next1'>下一步</a>-->
+    </section>
+    <section class='guide_pic_wrap' id="guide2"  style="display: none">
+       <!-- <img src='img/index_2.png' class='guide_pic' style='top:191px;left:38px;width:273px;' />-->
+        <img src='img/index_2.png' class='guide_pic' style='top:0px;left:0px;width:100%;' />
+         <div style="height: 0px"><div class="guide_btn2" id='guide_next2'></div></div>
+        <!-- <a href='javascript:;' class='guide_next_btn' style='top:435px;left:30%;' id='guide_next2'>下一步</a> -->
+    </section>
+    
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src='tween.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

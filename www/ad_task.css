@@ -1,0 +1,57 @@
+﻿/*
+	广告任务样式
+*/
+.ad_task{
+    width:100%;
+}
+.ad_task>p{
+    width:100%;
+    padding: 0 3%;
+    height:40px;
+    line-height: 40px;
+    font-size:1.5em;
+    border-top:1px solid #d4d4d4;
+}
+.ad_task ul{
+
+}
+.ad_task ul li{
+    padding-top: 15px;
+}
+.ad_task ul li> img{
+    display:block;
+    width:100%;
+    border-top:1px solid #d4d4d4;
+}
+.ad_task ul li>p{
+    width:100%;
+    height:45px;
+    font-size:1.5em;
+    line-height: 45px;
+    background: #ebf7f5;
+    border-bottom:1px solid #d4d4d4;
+}
+.ad_task ul li>p>span{
+    display:block;
+    float:left;
+    padding-left: 3%;
+}
+.ad_task ul li>p>span>b{
+    color:#fc4a24;
+    font-weight: normal;
+}
+.ad_task ul li>p>em{
+    display:block;
+    float:right;
+    color:#fc4a24;
+    padding-right: 3%;
+}
+.ad_task ul li>p>em>img{
+    width:20px;
+    padding-right:5px;
+}
+
+
+#iScrollInner{
+	padding-bottom: 100px;
+}

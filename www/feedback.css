@@ -1,0 +1,29 @@
+﻿/*
+	添加支付宝1样式
+*/
+.add_pay{
+	padding-top: 20px;
+	border-top: 1px solid #d7d6d5;
+	text-align: center;
+}
+textarea{
+    display: inline-block;
+    width: 84%;
+    height: 150px;
+    border: none;
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 1.5em;
+    background: none;
+    padding:5px;
+    border:1px solid #bebfb8;
+    margin-bottom: 25px;
+    color:#918f8f;
+    font-family: "微软雅黑";
+    margin-top: 19px;
+
+}
+#m_top{
+    margin-top: 80px;
+}
+

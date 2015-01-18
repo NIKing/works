@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>站内信详情</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="message_details.css" />
+	<script src="jquery.js"></script>
+	<script src="cordova.js"></script>
+	<script src="iscroll.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+<header>
+	<a id="backBtn"></a>
+	<h1>站内信详情</h1>
+	<!--<span id="delete">删除</span>-->
+</header>
+	<div class="maskLayout">
+	</div>
+	<!--<div class="deleteAlert">
+		<span class="titleCount">确定删除</span>
+		<span id="cancel">取消</span>
+		<span id="btn_Ok">好</span>
+	</div>-->
+<section class="main">
+    <div class="message_wrap">
+		<div class="title">
+			<span class="name"></span>
+			<span class="time"></span>
+		</div>
+		<div class="con"></div>
+	</div>
+	<!--<div class="message_wrap">
+		<div class="title">
+			<span class="name">Kimi</span>
+			<span class="time">20140627 00:00</span>
+		</div>
+		<div class="con">人生在世如身处荆棘之中，心不动，人不妄动，不动则不伤；如心动则人妄动，伤其身痛其骨，于是体会到世间诸般痛苦。</div>
+	</div>-->
+
+	<a href="javascript:;" class="long_btn btn_red" id="reply">回复</a>
+</section>
+
+<script src="message_details.js"></script>
+</body>
+</html>

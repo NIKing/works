@@ -1,0 +1,361 @@
+﻿/*
+    个人资料样式
+*/
+
+.cl1 {
+    width: 100%;
+    height: 120px;
+}
+.cl1_img {
+    width: 100px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.cl1_modify {
+    padding-top: 0;
+}
+.cl1_img img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #dedddc;
+    border-radius: 50%;
+}
+.p_data {
+    width: 100%;
+    min-height: 388px;
+    margin-top: 20px;
+    border-top: 1px solid #c9dcda;
+    color: #2a2a2a;
+    font-size: 1.4em;
+    background: rgba(255, 255, 255, 0.45);
+}
+.p_data ul li {
+    overflow: hidden;
+    border-bottom: 1px solid #c9dcda;
+    line-height: 46px;
+}
+.p_data ul li span {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 46px;
+    color: #626262;
+    padding-left: 6.25%;
+}
+.p_data ul li> input[type=text] {
+    border: 0px;
+    height: 25px;
+    /* opacity: 0; */
+    background: transparent;
+}
+.p_data ul li em {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 46px;
+    color: #292929;
+}
+/*.p_data ul li a {
+    float: right;
+    height: 46px;
+    color: #fb512d;
+}*/
+
+.modify_btn_wrap {
+    text-align: center;
+}
+.modify_btn_wrap a {
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    color: #fb512d;
+}
+a.sure_btn, a.cancel_btn {
+    display: none;
+}
+.sure_btn {
+    margin-right: 10%;
+}
+label {
+    display: none;
+}
+/*#iScrollInner {
+    */
+
+/*padding-bottom: 100px;*/
+
+/*
+    height: 100%;
+}*/
+
+input[type=radio] {
+    margin-right: 2%;
+}
+.shadow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    width: 100%;
+    min-height: 568px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.modify {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 12;
+    width: 70%;
+    height: 150px;
+    margin-left: -35%;
+    margin-top: -75px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.modify .title {
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
+    font-size: 1.5em;
+    text-align: center;
+}
+.modify input:nth-child(2) {
+    display: block;
+    width: 84%;
+    height: 40px;
+    margin: 5px auto 0;
+    padding-left: 4%;
+    border-radius: 5px;
+    border: 1px solid #d6d2ca;
+    background: none;
+}
+#imgInput {
+    display: block;
+    width: 120px;
+    margin: 10px auto;
+}
+.modify .btn_wrap {
+    overflow: hidden;
+    padding: 20px 20%;
+}
+.modify a {
+    display: block;
+    float: left;
+    width: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: #fb512d;
+}
+.wait_shadow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 19;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.wait_shadow img {
+    /*margin-top: 60%;*/
+    width: 20px;
+    margin-top: 95%;
+}
+.con_main {
+    padding: 50px 0 0 0;
+}
+.s_Shi, .s_ShiFiled {
+    width: 100%;
+    height: 46px;
+}
+.s_Shi > a {
+    display: block;
+    text-align: center;
+    width: 25%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 6px;
+    margin-right: 5px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #292929;
+}
+.s_ShiFiled a {
+    color: #626262;
+    margin: 0 10px 0 0;
+}
+.s_xian {
+    width: 100%;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1006;
+    overflow-y: hidden;
+}
+.s_xian>.red {
+    color: #fb512d;
+    text-align: center;
+}
+.s_xian>.red>li {
+    border-bottom: 1px solid #fb512d;
+}
+.s_xian > ul {
+    width: 85%;
+    margin: 0 auto;
+}
+.s_xian>p {
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    bottom: 5%;
+}
+.s_xian>p>img {
+    display: block;
+    width: 33px;
+    margin: 0 auto;
+}
+/*.s_xian > ul > li{
+    padding-left:10px;
+    border-bottom:1px solid #cecfcf;
+    text-align: center;
+}*/
+
+#scroller {
+    width: 85%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -42.5%;
+}
+#scroller>div {
+    width: 100%;
+    /*height:50%;*/
+}
+.area {
+    width: 100%;
+    /*height: 290px;*/
+    /*height:50%;*/
+    /*width:100%;
+    height: 50%;
+    */
+    /*overflow-y: scroll;*/
+    /*
+    margin: 0 auto;*/
+}
+.area>li {
+    border-bottom: 1px solid #cecfcf;
+    text-align: center;
+}
+/********弹出的提示框********/
+
+.maskLayoutForAlert, .maskLayout {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 800;
+    position: fixed;
+}
+.alertWindow {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    height: 117px;
+    left: 50%;
+    margin-left: -150px;
+    position: fixed;
+    text-align: center;
+    top: 36%;
+    width: 300px;
+    z-index: 999;
+}
+#maskLayout_btn_Ok {
+    position: absolute;
+    bottom: 10px;
+}
+#maskLayoutHr {
+    margin-top: 10px;
+    width: 99%;
+    border-top: 1px solid #BBBBBB
+}
+#alertContent {
+    line-height: 70px;
+    height: 70px;
+    font-size: 14px;
+}
+#alertOk {
+    line-height: 35px;
+    height: 35px;
+    color: #2D90FD;
+    font-weight: 900;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+.maskLayoutHidder {
+    display: none;
+}
+/***弹出的内容**/
+
+.userInfo_cardPay {
+    position: fixed;
+    margin: 2% 2%;
+    background-color: #F3F3F3;
+    z-index: 999;
+    border-radius: 8px;
+    width: 97%;
+    bottom: 50px;
+}
+.cardPayMaskLayoutHeight {
+    height: 9em;
+}
+.photoMaskLayoutHeight {
+    height: 110px;
+}
+.userInfo_cardPay span {
+    display: block;
+    font-size: 1.5em;
+    color: #2E90FF;
+    padding: 20px;
+    text-align: center;
+}
+#PayPal {
+    border-bottom: 1px solid #BBBBBB;
+}
+#Tenpay {
+    border-bottom: 1px solid #BBBBBB;
+}
+#PhotoSelect {
+    border-bottom: 1px solid #BBBBBB;
+}
+#clearMaskLayout {
+    position: fixed;
+    width: 97%;
+    bottom: 0px;
+    margin: 2% 2%;
+    background-color: #F3F3F3;
+    z-index: 999;
+    border-radius: 8px;
+    text-align: center;
+    color: #2E90FF;
+    font-size: 1.5em;
+    height: 35px;
+    line-height: 30px;
+    padding-top: 5px;
+    z-index: 999;
+}
+.hiddenProgress {
+    display: none;
+}
+.area li {
+    overflow: hidden;
+    border-bottom: 1px solid #c9dcda;
+    line-height: 46px;
+}

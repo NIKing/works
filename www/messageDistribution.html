@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>消息提示</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="messageDistribution.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src='iscroll.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>消息提示</h1>
+        <span>
+            <a id="set">设置</a>
+        </span>
+    </header>
+    <section class="main">
+        <ul>
+            <li style="border-left:0" class="light" id="type1">积分</li>
+            <li id="type2">站内信</li>
+            <li id="type3">系统消息</li>
+        </ul>
+        <aside id="iScroll">
+            <ol id='iScrollInner' class="iScrollInner ol1">
+              <!--  <li class="li1" id="li_467"><i class="i1" id="look467" _id="467">
+                    通过分享商品获得
+                    <em>2.1</em>米币</i>
+                    <em id="delete_467">删除</em>
+                    <p class="p1">2014-08-21 21:28:41</p></li>-->
+            </ol>
+
+            <!--<ol id='iScrollInner' class="iScrollInner ol1" style="display:block">
+                <li class="li1">
+                    <i class="i1">您的好友“小白”已经接受了您的邀请</i>
+
+                    <em>查看</em>
+                    <p class="p1">2013-09-09</p>
+                </li>
+                <li  class="li1">
+                    <i  class="i1">您的好友“小白”已经接受了您的邀请您的好友“小白”已经接受了您的邀请</i>
+
+                    <em>查看</em>
+                    <p  class="p1">2013-09-09</p>
+                </li>
+
+                <li class="li1">
+                    <i class="i1">您的好友“小白”已经接受了您的邀请
+
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                    </i>
+                    <em>查看</em>
+                    <p class="p1">2013-09-09</p>
+                </li>
+
+                <li class="li1">
+                    <i class="i1">您的好友“小白”已经接受了您的邀请</i>
+
+                    <em>查看</em>
+                    <p class="p1">2013-09-09</p>
+                </li>
+
+                <li  class="li1">
+                    <i  class="i1">您的好友“小白”已经接受了您的邀请您的好友“小白”已经接受了您的邀请</i>
+
+                    <em>查看</em>
+                    <p  class="p1">2013-09-09</p>
+                </li>
+                <li class="li1">
+                    <i class="i1">您的好友“小白”已经接受了您的邀请
+
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                    </i>
+                    <em>查看</em>
+                    <p class="p1">2013-09-09</p>
+                </li>
+            </ol>-->
+           <!-- <ol id='iScrollInner' class="iScrollInner ol2"  style="display:block">
+                <li class="li2">
+                    <i class="i2">您的好友“小白”已经接受了您的邀请</i>
+                    <p class="p2">2013-09-09</p>
+                </li>
+                <li  class="li2">
+                    <i  class="i2">您的好友“小白”已经接受了您的邀请您的好友“小白”已经接受了您的邀请</i>
+                    <p  class="p2">2013-09-09</p>
+                </li>
+                <li class="li2">
+                    <i class="i2">您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+
+                    </i>
+                    <p class="p2">2013-09-09</p>
+                </li>
+                <li class="li2">
+                    <i class="i2">您的好友“小白”已经接受了您的邀请</i>
+                    <p class="p2">2013-09-09</p>
+                </li>
+                <li  class="li2">
+                    <i  class="i2">您的好友“小白”已经接受了您的邀请您的好友“小白”已经接受了您的邀请</i>
+                    <p  class="p2">2013-09-09</p>
+                </li>
+                <li class="li2">
+                    <i class="i2">您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                        您的好友“小白”已经接受了您的邀请
+                    </i>
+                    <p class="p2">2013-09-09</p>
+                </li>
+            </ol>-->
+
+        </aside>
+    </section>
+
+    <script src="messageDistribution.js"></script>
+</body>
+
+</html>

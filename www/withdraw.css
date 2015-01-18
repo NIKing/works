@@ -1,0 +1,119 @@
+﻿/*
+	提现页样式
+*/
+.scrollInner{
+	overflow: hidden;
+	background: rgba(255,255,255,0.5);
+    height: 100%;
+
+}
+.total_money{
+	overflow: hidden;	
+	height: 45px;
+	padding-left: 6.25%;
+	border-top: 1px solid #d4d6d5;
+	border-bottom: 1px solid #d4d6d5;
+}
+.total_money span{
+	display: block;
+	margin-top: 15px;
+	background: url(images/cash.png) no-repeat 0 center;
+	background-size: 15.5px;
+	text-indent: 20px;
+	line-height: 15px;
+	color: #fd4a25;
+	font-size: 1.4em;
+}
+
+#lishi{
+    font-size: 1.5em;
+}
+
+#integral,#account{
+	display: block;
+	margin: 15px auto;
+}
+.description{
+	margin-top: 15px;
+	padding-left: 6.25%;
+	color: #fd4a25;
+	font-size: 1.4em;
+}
+.default_account{
+	overflow: hidden;
+	margin-top: 15px;
+	padding: 10px;
+	padding-left: 17%;
+	border: 1px solid #d3d3d3;
+	background: rgba(255,255,255,0.8) url(images/select.png) no-repeat 10% center;
+	background-size: 17.5px;
+}
+.default_account span{
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+}
+.default_account span:nth-child(1){
+	color: #2e2e2e;
+	font-size: 1.5em;
+}
+.default_account span:nth-child(2){
+	margin-left: 5%;
+	color: #6d6c6c;
+	font-size: 1.2em;
+}
+.time{
+	margin-top: 20px;
+	padding-left: 6.25%;
+	font-size: 1.4em;
+}
+.time span{
+	color: #fd4a25;
+}
+#confirm{
+	display: block;
+	margin: 50px auto 0;
+}
+.explain{
+	margin-top: 25px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.4em;
+}
+.explain em{
+	color: #fd4a25;
+}
+
+#btn_showAlipay{
+	position: absolute;
+	left: 82%;
+	width: 40px;
+	height: 30px;
+}
+#btn_showAlipay img{
+	width: 10px;
+	height: 15px;
+	margin-top: 4px;
+
+	transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);	/* Safari 和 Chrome */
+	-moz-transform: rotateZ(-90deg);	
+}
+
+.aliPayList{
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	 display: none; 
+	opacity: 0.9;
+	height: 150px;
+	overflow-y: scroll;
+}
+.aliPayList ul li{
+	height: 52px;
+	line-height: 52px;
+	border-bottom: 1px solid #b7b7b7;
+	font-size: 1.4em;
+	padding-left: 17%;
+}

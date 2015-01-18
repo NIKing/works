@@ -1,0 +1,98 @@
+﻿/*
+	体验应用样式
+*/
+header span{
+	position: absolute;
+	top: 15px;
+	left: 6.25%;
+	font-size: 1.5em;
+	color: #fb512d;
+}
+.ad_wrap{
+	position: relative;
+}
+#adWrap{
+	overflow: hidden;
+}
+.ad_wrap ul{
+	overflow: hidden;
+	width: 400%;
+}
+.ad_wrap li{
+	float: left;
+	width: 25%;
+}
+.ad_wrap img{
+	display: block;
+	width: 100%;
+}
+.ad_btn_wrap{
+	position: absolute;
+	top: 90%;
+	width: 100%;
+}
+.ad_btn_wrap a{
+	display: block;
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #888888;
+}
+.ad_btn_wrap a:nth-child(1){
+	background: black;
+	margin-left: 45%;
+}
+.ad_btn_wrap a:nth-child(2){
+	margin-left: 2%;
+}
+.ad_btn_wrap a:nth-child(3){
+	margin-left: 2%;
+}
+.ad_btn_wrap a:nth-child(4){
+	margin-left: 2%;
+}
+#content{
+	padding-bottom: 50px;
+}
+#content li{
+	overflow: hidden;
+	padding: 8px 0;
+	border-bottom: 1px solid #bea593;
+}
+#content li img{
+	display: block;
+	float: left;
+	width: 14%;
+	margin-left: 6.25%;
+}
+#content li div{
+	float: left;
+	margin-left: 3%;
+}
+#content li div span{
+	display: block;
+}
+#content li div span:nth-child(1){
+	font-size: 1.5em;
+}
+#content li div span:nth-child(2){
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+#content li div em{
+	color: #fb512d;
+}
+#content li a{
+	display: block;
+	float: right;
+	width: 15%;
+	height: 25px;
+	margin-top: 10px;
+	margin-right: 6.25%;
+	border-radius: 5px;
+	background: #fd4a25;
+	text-align: center;
+	line-height: 25px;
+	color: white;
+}

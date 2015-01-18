@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>首页</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="addPay1.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1 id="title">修改支付宝</h1>
+		<a id="delete_alipay">删除</a>
+	</header>
+	<section class="main">
+		<div class="add_pay">
+            <p class="t_left m_bottom">请准确填写支付宝账号，以免产生损失</p>
+			<input class="long_input m_bottom" id="input" placeholder='支付宝账号' />
+			<!-- <a href="javascript:;" class="long_btn long_btn_red m_bottom" id="submit">下一步</a> -->
+           <!--  <p class="t_left m_bottom">请再次填写支付宝用户名</p> -->
+			<input class="long_input m_bottom" id="alipayName" placeholder='再次输入支付宝账号' />
+			<a href="javascript:;" class="long_btn long_btn_red m_bottom" id="submit">提交</a>
+		</div>
+	</section>
+	<script src="addPay1.js"></script>
+</body>
+</html>

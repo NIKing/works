@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>资金管理</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="money_manager.css" />
+    <!--<script src="cordova.js"></script>-->
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src='tween.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+<header>
+    <a id="backBtn"></a>
+    <h1>资金管理</h1>
+    <span>明细</span>
+</header>
+<section class="main" id='iScroll'>
+    <div class="scrollInner">
+        <div class="num_wrap">
+            <div class="left">
+                <span class='num Num-type' id="dangqian">0</span>
+                <span class="title current">当前总米币</span>
+            </div>
+            <div class="right">
+                <span class='num Num-type' id="lishi">0</span>
+                <span class="title history">历史米币收入</span>
+            </div>
+        </div>
+        <ul class="info_wrap">
+            <li id="manage1">
+                <span>值得买收入</span> <em id="chaojifanli" class="Num-type">0</em>
+            </li>
+            <li id="manage2">
+                <span>邀请收入</span> <em id="yaoqing" class="Num-type">0</em>
+            </li>
+            <li id="manage3">
+                <span>我要推荐收入</span>
+                <em id="tuijian" class="Num-type">0</em>
+            </li>
+            <li id="manage4">
+                <span>广告收入</span>
+                <em id="guanggao" class="Num-type">0</em>
+            </li>
+            <li id="manage5">
+                <span>赠送|索要</span>
+                <em id="sendask" class="Num-type">0</em>
+            </li>
+            <!--<li id="manage6">
+                <span>赠送|索要</span>
+                <em id="sendask1" class="Num-type">1000|1000</em>
+            </li>-->
+        </ul>
+        <div class="history_total" >历史提现金额:<span id="tixian"></span></div>
+        <a href="javascript:;" class="long_btn btn_red" id="withdrawBtn">提现</a>
+        <a href="javascript:;" class="long_btn btn_red" id="askforandgive">赠送 | 索要</a>
+    </div>
+</section>
+
+<script src="money_manager.js"></script>
+</body>
+</html>

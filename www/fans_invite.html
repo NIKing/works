@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的粉丝</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="fans_invite.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src='common.js'></script>
+	<script src="iscroll.js"></script>
+	<script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>邀请好友</h1>
+	</header>
+	<section class="con_main" id='iScroll'>
+		<div id="scrollInner">
+			<div class="friend_num">
+				您已经邀请了 <em id="yaoqingnum">210</em>
+				位好友.
+			</div>
+			<div class="description">直接邀请好友</div>
+			<div class="invite_wrap">
+				<div class="invite_inner">
+					<div>
+						<img id="weixin_invite" src="images/weixin.png" ev="yqhy_invite_weixin" />
+						<span>邀请微信好友</span>
+					</div>
+					<div>
+						<img id="phone_invite" src="images/phone.png" ev="yqhy_invite_tonxunlu" />
+						<span>邀请通讯录好友</span>
+					</div>
+				</div>
+			</div>
+			<div class="description">你也可以分享好友</div>
+			<div class="share_wrap">
+				<ul>
+					<li>
+						<img id="friend_share" src="images/friend_qq.png"  ev="yqhy_share_pengyouquan" />
+						<span>朋友圈</span>
+					</li>
+					<li>
+						<img id="sina_share" src="images/sina.png" ev="yqhy_share_sinaweibo"/>
+						<span>新浪微博</span>
+					</li>
+					<li>
+						<img id="QQKJ_share" src="images/kongjian.png" ev="yqhy_share_qqspace"/>
+						<span>QQ空间</span>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<img id="QQ_share" src="images/qq.png" ev="yqhy_share_qq"/>
+						<span>腾讯QQ</span>
+					</li>
+					<li>
+						<img id="QQWB_share" src="images/weibo_qq.png" ev="yqhy_share_qqweibo"/>
+						<span>腾讯微博</span>
+					</li>
+					<li>
+						<img id="renren_share" src="images/renren.png" ev="yqhy_share_renren"/>
+						<span>人人网</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="wait_shadow">
+		<img src="images/wait.gif" />
+	</section>
+
+    <section class='guide_pic_wrap' id="guide" style="display: none">
+        <!--<img src='img/index_6.png' class='guide_pic' style='top:20px;left:-1px;width:100%;' />-->
+        <img src='img/index_6.png' class='guide_pic' style='top:0;left:0;width:100%;' />
+        <div style="height: 0px"><div class="guide_btn1" id='guide_next1'></div></div>
+        <div style="height: 0px"><div class="guide_btn2" id='guide_next2'></div></div>
+        <!-- <a href='javascript:;' class='guide_next_btn' style='top:440px;left:30%;' id='guide_next'>下一步</a> -->
+    </section>
+
+	<script src="fans_invite.js"></script>
+</body>
+</html>

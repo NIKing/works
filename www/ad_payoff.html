@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+          <meta name="format-detection" content="telephone=no" />
+    <title>广告赚钱</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="ad_payoff.css"/>
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src='tween.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+<header>
+    <a id="backBtn"></a>
+
+    <h1>广告赚钱</h1>
+    <span class='rule'>规则</span>
+</header>
+<section class="con_main" id='iScroll'>
+    <div id="scrollInner">
+        <img src="img/ad_payoff.jpg" id="adImg"/>
+        <div class="desc_wrap"></div>
+        <a href="javascript:;" class="long_btn btn_red" id="personBtn" ev="ggzq_userinfo">完善个人信息</a>
+        <a href="javascript:;" class="long_btn btn_transparent" id="experienceBtn1" ev="ggzq_app1">体验应用1</a>
+        <a href="javascript:;" class="long_btn btn_transparent" id="experienceBtn2" ev="ggzq_app2">体验应用2</a>
+        <a href="javascript:;" class="long_btn btn_transparent" id="experienceBtn3" ev="ggzq_share_goods">分享商品</a>
+    </div>
+</section>
+
+<section class='guide_pic_wrap' id="guide1" style="display: none">
+    <!--<img src='img/index_3.png' class='guide_pic' style='top:141px;left:-1px;width:100%;' />-->
+    <img src='' class='guide_pic' id="img1" style='top:0px;left:0;width:100%;' />
+    <div style="height: 0px"><div class="guide_btn1" id='guide_next1'></div></div>
+    <!-- <a href='javascript:;' class='guide_next_btn' style='top:195px;left:15%;' id='guide_next1'>下一步</a> -->
+</section>
+<section class='guide_pic_wrap' id="guide2" style="display: none">
+   <!-- <img src='img/index_4.png' class='guide_pic' style='top:161px;left:-1px;width:100%;' />-->
+    <img src='' class='guide_pic' id="img2" style='top:0;left:0;width:100%;' />
+    <div style="height: 0px"><div class="guide_btn2" id='guide_next2'></div></div>
+    <!-- <a href='javascript:;' class='guide_next_btn' style='bottom:0px;left:15%;' id='guide_next2'>下一步</a> -->
+</section>
+
+<script src="ad_payoff.js"></script>
+</body>
+</html>

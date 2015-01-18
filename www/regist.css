@@ -1,0 +1,38 @@
+﻿/*
+	注册页样式
+*/
+.regist_wrap{
+	padding-top: 20px;
+	border-top: 1px solid #d6d6d5;
+	text-align: center;	
+}
+#phoneNum_invite,#phoneNum{
+	margin-bottom: 15px;
+}
+.regist_wrap > div{
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+#securityCode{
+	display: block;
+	float: left;
+	width: 62.5%;
+	margin-left: 6%;
+}
+#getSeCode{
+	display: block;
+	float: left;
+	width: 22%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fd4a25;
+	font-size: 1.2em;
+}
+.regist {
+    text-align: left;
+    margin-left: 20px;
+}
+.regist a{
+    color:#fd4a25;
+}

@@ -1,0 +1,132 @@
+﻿/*
+	首页样式
+*/
+/*.nav_wrap{
+	overflow: hidden;
+	width: 300px;
+	margin: 15px auto 20px;
+	border: 2px solid #fb512d;
+	border-radius: 5px;
+	text-align: center;
+}
+.nav_wrap nav{
+	float: left;
+	width: 33.33%;
+}
+.nav_wrap nav span{
+	display: block;
+	height: 30px;
+	border-right: 2px solid #fb512d;
+	line-height: 30px;
+	color: #ed4135;
+}
+.nav_wrap nav:last-child span{
+	border-right: none;
+}
+.nav_wrap .hover{
+	background: #fb512d;
+	color: white;
+}*/
+
+.con_main>ul {
+    width: 300px;
+    height: 28px;
+    margin: 13px auto 0;
+    border: 2px solid #fb512d;
+    border-radius: 5px;
+}
+.con_main>ul>li {
+    float: left;
+    width: 98px;
+    text-align: center;
+    line-height: 28px;
+    border-left: 2px solid #fb512d;
+    color: #fb512d;
+}
+#type1.light,#type2.light{
+    width: 98px;
+    background: #fb512d;
+    color: #fff;
+}
+#type3.light{
+    width: 100px;
+    background: #fb512d;
+    color: #fff;
+}
+
+
+#iScroll{
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	width: 100%;
+}
+#iScroll ul{
+	padding-bottom: 50px;	
+}
+#iScroll li{
+	overflow: hidden;
+}
+
+.lifirst{
+    margin-top: 20px;
+}
+
+.rank_logo{
+	float: left;
+	width: 5%;
+	margin:15px 3% 0 8%;
+	color: #6b6a6a;
+	font-size: 1.8em;
+}
+.rank_logo img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.portrait{
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+}
+.info{
+	float: right;
+	width: 66%;
+	height: 45px;
+	border: 1px solid #cddcd9;
+	border-top-left-radius: 22.5px;
+	border-bottom-left-radius: 22.5px;
+	background: rgba(237,250,249,0.5);
+}
+.name{
+	display: block;
+	float: left;
+	width:53%;
+	padding-left: 4px;
+	/*text-align: center;*/
+	line-height: 45px;
+	font-size: 1.5em;
+	text-indent: 2.5%;
+}
+.running_days{
+	display: block;
+	float: right;
+	width: 45%;
+	background: url(images/days.png) no-repeat 0 center;
+	background-size: 16px;
+	line-height: 45px;
+	font-size: 1.5em;
+	color: #ed4135;
+	text-indent: 25px;
+}
+.in_days{
+	clear: both;
+	margin-bottom: 15px;
+	padding-right: 6.25%;
+	text-align: right;
+	font-size: 1.2em;
+	color: #585757;
+    height:17px;
+}

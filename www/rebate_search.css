@@ -1,0 +1,169 @@
+.search{
+	height: 46px;
+	width:100%;
+	border-bottom: 1px solid #bbbfba;
+		line-height: 50px;
+		position: relative;
+}
+.search input{
+	width:70%;
+	outline: none;
+	border-radius: 5px;
+	border:1px solid  #bbbfba;
+	font-size: 1.5em;
+	height: 30px;
+	margin-left: 5%;
+	padding-left: 4px;
+
+}
+
+.btn_search{
+	background-color: #fb512d;
+	width:50px;
+	height: 30px;
+	border-radius: 5px;
+	position: absolute;
+/*	margin-top: 8px;
+	margin-left: 10px;*/
+	top: 9px;
+	overflow: hidden;
+	left: 80%;
+
+}
+
+#btn_search{
+	width:100%;
+	background: url(images/search.png) no-repeat;
+	background-size: 40%;
+	background-position: 50%;
+	border: 0px;
+	height: 100%;
+	outline: none;
+    position: absolute;
+}
+
+.search_key{
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+}
+.search_key ul{
+	overflow: hidden;
+	width: 100%;
+}
+.search_key ul li{
+	float: left;
+	width:74px;
+	height: 30px;
+	background-color:#fff;
+	border: 1px solid #bbbfba;
+	/*background-repeat: 0.5px;*/
+	opacity: 0.6;
+	border-radius: 5px;
+	margin:4%;
+	text-align: center;
+	line-height: 30px;
+}
+
+.hide_class{
+	display: none;
+}
+
+
+
+#warpper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+	margin-top: 100px;
+    padding-bottom: 50px;
+}
+.scrollInner {
+    padding: 0px 0 50px;
+}
+.scrollInner ul {
+    overflow: hidden;
+    padding: 3px 1% 0;
+}
+.scrollInner li {
+    float: left;
+    width: 49.5%;
+    background: rgba(255, 255, 255, 0.5);
+}
+.scrollInner li:nth-child(2) {
+    margin-left: 1%;
+}
+.scrollInner li .inner_border {
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+}
+.goods_image {
+    width: 100%;
+}
+.goods_info {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.description {
+    margin-top: 2px;
+    padding: 0 3%;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: 1em;
+    height: 55px;
+}
+.money {
+    display: block;
+    float: left;
+    height: 15px;
+    margin-left: 6.25%;
+    background: url(images/yang.png) no-repeat 0 bottom;
+    background-size: 7px;
+    line-height: 15px;
+    text-indent: 10px;
+    font-size: 2em;
+    color: #fb512d;
+}
+.discount {
+    display: block;
+    float: right;
+    width: 25%;
+    height: 20px;
+    margin-right: 6.25%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.1em;
+    color: white;
+    background: #fd4a25;
+    border-radius: 5px;
+}
+.share_number {
+    margin: 10px 6.25% 15px;
+    background: url(images/diamond.png) no-repeat 0 center;
+    background-size: 12.5px;
+    text-indent: 15px;
+    font-size: 0.9em;
+}
+.more {
+    margin: 5px 0;
+    text-align: center;
+}
+.more a {
+    color: white;
+    font-size: 1.4em;
+}
+#issueBtn {
+    position: absolute;
+    top: 434px;
+    left: 82%;
+    width: 12%;
+}
+
+#nores{
+    display: none;
+    text-align: center;
+    color:#28A5E0;
+    margin-top: 25px;
+}

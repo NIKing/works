@@ -1,0 +1,36 @@
+﻿/*
+	首页样式
+*/
+header span{
+	position: absolute;
+	top: 15px;
+	left: 6.25%;
+	font-size: 1.5em;
+	color: #fb512d;
+}
+#iscrollInner{
+	padding: 0 0 50px;
+}
+.description{
+	margin-top: 15px;
+	padding-left: 6.25%;
+	font-size: 1.3em;
+	color: #504f4f;
+}
+.fans_tree_wrap{
+	padding: 15px 6.25%;
+}
+#fansTree{
+	width: 100%;
+}
+.explain{
+	padding: 0 6.25%;
+	font-size: 1.3em;
+	color: #121111;
+	text-indent: 2em;
+	line-height: 25px;
+}
+#iscrollInner a{
+	display: block;
+	margin: 25px auto;
+}

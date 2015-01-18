@@ -1,0 +1,87 @@
+﻿/*
+	收支明细样式
+*/
+.p_details{
+    width:100%;
+}
+.p_details>ul{
+    width:300px;
+    height:28px;
+    /*background:#f0f;*/
+    margin: 13px auto 0;
+    border:2px solid #fb512d;
+    border-radius: 5px;
+}
+.p_details>ul>li{
+    float:left;
+    width:58px;
+    height:28px;
+    text-align: center;
+    line-height: 28px;
+    border-left:2px solid #fb512d;
+    color:#fb512d;
+}
+.p_details>ul>li.light{
+    background: #fb512d;
+    color:#fff;
+}
+#type5.light{
+    width:60px;
+}
+.p_details>div{
+
+}
+.p_details>div>ol{
+    width:100%;
+}
+.p_details>div>ol>li{
+    width:100%;
+    height:80px;
+    border-bottom:1px solid #b6b6b0;
+}
+.p_details>div>ol>li>p{
+    height:28px;
+    line-height: 28px;
+}
+.p_top{
+    padding-top:13px;
+}
+.p_details>div>ol>li>p strong{
+    float:left;
+    padding-left:3%;
+    color:#292929;
+    font-size:16px;
+}
+.p_details>div>ol>li>p b{
+    float:right;
+    padding-right:3%;
+    color:#fb512d;
+    font-size:16px;
+}
+.p_details>div>ol>li>p>i{
+    float:left;
+    padding-left:3%;
+    font-style: normal;
+    color:#707070;
+    width: 74%;
+    height: 28px;
+    overflow: hidden;
+}
+.p_details>div>ol>li>p>em{
+    float:right;
+    /*padding-right:3%;*/
+    color:#707070;
+    width: 23%;
+overflow: hidden;
+}
+
+#iScroll {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+/*#iScrollInner{
+	padding-bottom: 100px;
+}*/

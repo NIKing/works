@@ -1,0 +1,121 @@
+﻿/*
+	首页样式
+*/
+header span{
+	position: absolute;
+	top: 15px;
+	right: 10%;
+	color: #fb512d;
+	font-size: 1.5em;
+}
+#scrollInner{
+	padding-bottom: 50px;
+}
+.info_wrap{
+	border-top: 1px solid #d7d2cc;
+	border-bottom: 1px solid #d7d2cc;
+	background: rgba(255,255,255,0.5);
+}
+#fansPic{
+	display: block;
+    width: 100px;
+    height: 100px;
+	margin: 20px auto 10px;
+	border-radius: 50%;
+}
+#name{
+	display: block;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 1.7em;
+}
+#fansNum{
+	display: block;
+	margin-bottom: 20px;
+	background: url(images/p_num.png) no-repeat 40% center;
+	background-size: 15px;
+	text-align: center;
+	font-size: 1.2em;
+	text-indent: 2em;
+}
+.num_info{
+	height: 32px;
+	padding-top: 8px;
+	border-bottom: 1px solid #d6d4cd;
+	text-align: center;
+	background: rgba(255,255,255,0.5);
+}
+.num_info > span{
+	display: block;
+	float: left;
+	width: 50%;
+	line-height: 25px;
+	font-size: 1.2em;
+}
+.left_wrap span{
+	display: block;
+	border-right: 1px solid #d6d4cd;
+}
+.num_info em{
+	color: #fb512d;
+	font-size: 1.5em;
+}
+.nav_wrap{
+	overflow: hidden;
+	padding-top: 30px;
+}
+.info_details{
+	margin-top: 10px;
+}
+.info_details ul{
+	border-top: 1px solid #d6d2ca;
+	background: rgba(255,255,255,0.8);
+	line-height: 50px;
+}
+.info_details li{
+	overflow: hidden;
+	border-bottom: 1px solid #d6d2ca;
+}
+.info_details span{
+	display: block;
+	float: left;
+}
+.info_details span:nth-child(1){
+	width: 25%;
+	padding-left: 6.25%;
+	color: #8b8b8b;
+}
+.info_details span:nth-child(2){
+	
+}
+#stateBtn{
+	/*background: url(images/next.png) no-repeat 90% center;*/
+	background-size: 16px;
+}
+#stateBtn em{
+    color: #fb512d;
+}
+#stateBtn span:nth-child(2){
+	overflow: hidden;
+	width: 50%;
+	height: 50px;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+#scrollInner a{
+	display: block;
+	margin: 25px auto;
+}
+
+#letter{
+	position: absolute;
+	width: 50px;
+	/* display: block; */
+	overflow: hidden;
+	z-index: 900;
+	height: 40px;
+	top: 16px;
+	left: 83%;
+	font-size: 1.4em;
+	color: #fb512d;
+}

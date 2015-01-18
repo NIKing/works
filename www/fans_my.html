@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的邀请人</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="fans_details.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src="iscroll.js"></script>
+	<script src="common.js"></script>
+	<script src="notice.js"></script>
+    <style type="text/css">
+        #scrollInner{
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>我的邀请人</h1>
+	</header>
+	<section class="con_main" id='iScroll'>
+		<div id="scrollInner">
+			<div class="info_wrap">
+				<img src="img/fans.png" id="fansPic" />
+				<span id='name'>无</span>
+				<span id='fansNum'>粉丝<em id="all">0</em>人</span>
+			</div>
+			<div class="num_info">
+				<span class='left_wrap'>
+					<span>
+						直接粉丝 <em id="zhijie" class="Num-type">0</em>
+						人
+					</span>
+				</span>
+				<span>
+					关联粉丝 <em id="guanlian" class="Num-type">0</em>
+					人
+				</span>
+			</div>
+			<div class="info_details">
+				<ul>
+					<li>
+						<span>地区</span>
+						<span id='diqu'>无</span>
+					</li>
+					<li>
+						<span>个性签名</span>
+						<span id="qianming">无</span>
+					</li>
+					<li>
+						<span>电话</span>
+						<span id="mobile">无</span>
+					</li>
+					<li id='stateBtn'>
+						<span>个人动态</span>
+						<em id="dongtai">查看动态详情</em>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<script src="fans_my.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>商品详情</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="goods_details.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+    <script src='tween.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>商品详情</h1>
+    </header>
+    <section class="index_main" id='iScroll'>
+        <div class="scrollInner">
+            <img id="goodsImg" />
+            <div class="decription"></div>
+            <div class="goods_info">
+                <span class='money Num-type'>189.00</span>
+                <span class='discount'>8.8折</span>
+                <div id="aiscollect">
+                    <em class='collect'>收藏</em>
+                    <img src="images/collect.png" class="love" />
+                </div>
+                <span class="share_number">25638412人分享</span>
+            </div>
+            <div class="btn_wrap">
+                <a href="javascript:;" class="short_btn btn_red" id="Buy">立刻购买</a>
+                <a href="javascript:;" class="short_btn btn_green" id="shareMoney">商品分享</a>
+            </div>
+            <div class="seller_say">
+                <p>店长说：</p>
+                <p>
+                    韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装条纹T恤女 高腰裙裤子韩版显瘦休闲套装条纹T恤女 高腰裙裤子韩版显瘦休闲套装条纹T恤女 高腰裙裤子韩版显瘦休闲套装
+                </p>
+            </div>
+			<!--同类推荐-->
+			<div class="commendation">
+				<p>同类推荐</p>
+				<div class="classify_wrap">
+					<div class="classify_one" id="oneClassIScroll">
+						<!--<ul>
+							<li>
+								<div class="inner_border">
+									<img src="img/goods.jpg" class="goods_image" />			
+									<div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+									<div class="goods_info">
+										<span class='money'>189.00</span>			
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inner_border">
+									<img src="img/goods.jpg" class="goods_image" />			
+									<div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+									<div class="goods_info">
+										<span class='money'>189.00</span>			
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul>			
+							<li>
+								<div class="inner_border">
+									<img src="img/goods.jpg" class="goods_image" />			
+									<div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+									<div class="goods_info">
+										<span class='money'>189.00</span>			
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inner_border">
+									<img src="img/goods.jpg" class="goods_image" />			
+									<div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+									<div class="goods_info">
+										<span class='money'>189.00</span>			
+									</div>
+								</div>
+							</li>
+						</ul>-->
+					</div>
+				</div>
+			</div>
+          </div>
+    </section>
+    <footer>
+        <nav class="hover" ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+    </footer>
+
+    <section class="shadow"></section>
+    <section class="share_wrap">
+        <ul>
+            <li>
+                <div>
+                    <img id="weixin_invite" src="images/weixin.png" ev="spxq_share_weixin" />
+                    <span>微信</span>
+                </div>
+                <div>
+                    <img id="sina_share" src="images/sina.png" ev="spxq_share_sinaweibo"/>
+                    <span>新浪微博</span>
+                </div>
+                <div>
+                    <img id="QQKJ_share" src="images/kongjian.png" ev="spxq_share_qqspace"/>
+                    <span>QQ空间</span>
+                </div>
+                <div>
+                    <img id="friend_share" src="images/friend_qq.png" ev="spxq_share_pengyouquan"/>
+                    <span>朋友圈</span>
+                </div>
+                <div>
+                    <img id="phone_invite" src="images/note.png" ev="spxq_share_sms"/>
+                    <span>短信</span>
+                </div>
+                <div>
+                    <img id="renren_share" src="images/renren.png" ev="spxq_share_renren"/>
+                    <span>人人网</span>
+                </div>
+                 <div>
+                    <img id="QQ_share" src="images/qq.png" ev="spxq_share_qq"/>
+                    <span>腾讯QQ</span>
+                </div>
+                <div>
+                    <img id="QQWB_share" src="images/weibo_qq.png" ev="spxq_share_qqweibo"/>
+                    <span>腾讯微博</span>
+                </div>
+            </li>
+
+        </ul>
+        <div id="shareBtn">取消</div>
+        <!-- <a href="javascript:;" id="closeBtn">关闭</a> -->
+    </section>
+
+    <section class="wait_shadow">
+        <img src="images/wait.gif" />
+    </section>
+
+    <script src="goods_details.js"></script>
+    <!-- // <script src="fans_invite.js"></script> -->
+</body>
+
+</html>

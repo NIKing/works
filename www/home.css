@@ -1,0 +1,212 @@
+﻿/*
+	首页样式
+*/
+.index_main {
+	/*padding:0px;*/
+	padding: 50px 0;
+}
+.scrollInner{
+	overflow: hidden;
+	/*padding: 0 0 50px;*/
+    margin-top: 50px;
+    /*height: 90%;*/
+}
+#scrollInner{
+	padding-bottom: 100px;
+}
+.ad_wrap{
+	position: relative;
+}
+#adWrap{
+	overflow: hidden;
+}
+.ad_wrap ul{
+	overflow: hidden;
+	width: 400%;
+}
+.ad_wrap li{
+	float: left;
+	width: 25%;
+}
+.ad_wrap img{
+	display: block;
+	width: 100%;
+}
+.ad_btn_wrap{
+	position: absolute;
+	top: 90%;
+	width: 100%;
+}
+.ad_btn_wrap a{
+	display: block;
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background: #888888;
+}
+.ad_btn_wrap a:nth-child(1){
+	background: black;
+	margin-left: 45%;
+}
+.ad_btn_wrap a:nth-child(2){
+	margin-left: 2%;
+}
+.ad_btn_wrap a:nth-child(3){
+	margin-left: 2%;
+}
+.ad_btn_wrap a:nth-child(4){
+	margin-left: 2%;
+}
+.btn_wrap{
+	padding: 20px 0 15px;
+}
+.btn_wrap li{
+	overflow: hidden;
+}
+.btn_wrap li:nth-child(2){
+	margin-top: 10px;
+}
+.btn_wrap nav{
+	float: left;
+	width: 33%;
+}
+.btn_wrap nav:nth-child(1){
+	margin-right: 0.5%;
+}
+.btn_wrap nav:nth-child(2){
+	margin-right: 0.5%;
+}
+.btn_wrap span{
+	display: block;
+}
+.btn_wrap span:nth-child(1){
+	height: 55px;
+}
+.btn_wrap span:nth-child(2){
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.1em;
+	color: #6a6a6a;
+}
+.btn_wrap .btn1 span:nth-child(1){
+	background: url(images/rebate.png) center center no-repeat;
+	background-size: 53px;
+}
+.btn_wrap .btn2 span:nth-child(1){
+	background: url(images/money.png) center center no-repeat;
+	background-size: 53px;
+}
+.btn_wrap .btn3 span:nth-child(1){
+	background: url(images/recommend.png) center center no-repeat;
+	background-size: 53px;
+}
+.btn_wrap .btn4 span:nth-child(1){
+	background: url(images/ranking_list.png) center center no-repeat;
+	background-size: 53px;
+}
+.btn_wrap .btn5 span:nth-child(1){
+	background: url(images/withdraw_deposit.png) center center no-repeat;
+	background-size: 53px;
+}
+.btn_wrap .btn6 span:nth-child(1){
+	background: url(images/invite.png) center center no-repeat;
+	background-size: 53px;
+}
+.info_wrap{
+	border-top: 1px solid white;
+	border-bottom: 2px solid white;
+}
+.info_wrap li{
+	overflow: hidden;
+	border-top: 1px solid white;
+	background: #dec9b9;
+}
+.info_wrap div{
+	float: left;
+	width: 49.5%;
+}
+.info_wrap div:nth-child(1){
+	border-right: 1px solid white;
+}
+.info_wrap span{
+	display: block;
+	float: left;
+	height: 55px;
+	margin-left: 10px;
+	line-height: 55px;
+	font-size: 1.1em;
+}
+.info_wrap em{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	font-size: 2.2em;
+	margin-top: 14px;
+	color: #fb512d;
+}
+
+.info_wrap .line{
+    border-bottom: 1px solid #fb512d;
+}
+
+/*引导页按钮定位*/
+@media only screen and (min-device-height:240px) and (max-device-height:500px){
+    .guide_btn1{
+       /* border: 4px solid red;*/
+        position: absolute;
+        height: 18%;
+        width: 40%;
+        left: 30%;
+        top: 40%;
+    }
+    .guide_btn2{
+        /*border: 4px solid red;*/
+        position: absolute;
+        height: 25%;
+        width: 40%;
+        bottom: 148px;
+        right: 0;
+        top: 57%;
+    }
+}
+@media only screen and (min-device-height:500px){
+    .guide_btn1{
+        /*border: 1px solid red;*/
+        position: absolute;
+        height: 18%;
+        width: 40%;
+        left: 30%;
+        top: 33%;
+    }
+    .guide_btn2{
+        /*border: 1px solid red;*/
+        position: absolute;
+        height: 25%;
+        width: 40%;
+        bottom: 148px;
+        right: 0;
+        top: 48%;
+    }
+}
+
+/*.guide_btn1{
+    border: 1px solid red;
+    position: absolute;
+    height: 18%;
+    width: 40%;
+    *//* bottom: 148px; *//*
+    left: 30%;
+    top: 33%;
+}*/
+/*.guide_btn2{
+    border: 1px solid red;
+    position: absolute;
+    height: 25%;
+    width: 40%;
+    *//* bottom: 148px; *//*
+    right: 0;
+    top: 48%;
+}*/
+

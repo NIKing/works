@@ -1,0 +1,182 @@
+﻿/*
+	分享商品样式
+*/
+.index_main{
+	padding: 0px;
+}
+.scrollInner{
+	overflow: hidden;
+	background: rgba(255,255,255,0.5);
+}
+.goods_share{
+	width:100%;
+	padding-top:50px;
+}
+
+.goods_share li{
+	width:100%;
+	height:125px;
+	border-bottom:1px solid #c9c9c9;
+
+	position:relative;
+
+	clear:both;
+}
+
+.goods_share li span{
+	display:block;
+	float:left;
+	
+}
+
+.goods_share li span > img{
+	display:block;
+	width:100px;
+	border:1px solid #c9c9c9;
+	margin:10px 0 0 10px;
+}
+.goods_share li span > p{
+	padding-top:12px;
+	padding-left:8px;
+}
+.goods_share li span > h1{
+	padding-top:10px;
+	padding-left:8px;
+	color:#595757;
+	font-weight:normal;
+	font-size:16px;
+}
+.z_da{
+	font-size:18px;
+	color:#fb5b3a;
+}
+#yang{
+	display:block;
+	width:8px;
+	float:left;
+	padding-top:9px;
+	padding-right:3px;
+}
+#diamond{
+	display:block;
+	width:13px;
+	float:left;
+	padding-top:4px;
+	padding-right:3px;
+}
+.s_right{
+	position:absolute;
+	top:22px;
+	right:8px;
+}
+.s_right > p{
+	
+}
+.s_right > p > b{
+	color:#fd4a25;
+	font-weight:normal;
+}
+
+.s_right > p > button{
+	display:block;
+	width:50px;
+	height:25px;
+	color:#fff;
+	line-height:25px;
+	text-align:center;
+	background:#fd4a25;
+	border:0px;
+	border-radius:5px;
+	position:absolute;
+	right:0px;
+	z-index: 400;
+}
+
+.shadow{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 18;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+.share_wrap{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 19;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: white;
+}
+.share_wrap li{
+    overflow: hidden;
+    width: 95.5%;
+}
+.share_wrap li div{
+    float: left;
+    width: 33%;
+    padding-top: 15px;
+    text-align: center;
+}
+.share_wrap li div:nth-child(2){
+    width: 34%;
+}
+.share_wrap div img{
+    width: 45px;
+}
+.share_wrap div span{
+    display: block;
+    font-size: 1em;
+}
+
+.wait_shadow{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 19;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.wait_shadow img{
+    margin-top: 60%;
+}
+#shareBtn{
+    width: 100%;
+    margin-top: 10px;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 47px;
+    color: #fd4a25;
+    font-size: 1.5em;
+}
+
+
+/*引导页按钮定位*/
+@media only screen and (min-device-height:240px) and (max-device-height:500px){
+    .guide_btn{
+        /*border: 4px solid red;*/
+        position: absolute;
+        height: 24%;
+        width: 30%;
+        /* bottom: 148px; */
+        right: 0;
+        top: 13%;
+    }
+}
+@media only screen and (min-device-height:500px){
+    .guide_btn{
+        /*border: 1px solid red;*/
+        position: absolute;
+        height: 24%;
+        width: 30%;
+        /* bottom: 148px; */
+        right: 0;
+        top: 10%;
+    }
+}

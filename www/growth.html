@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+	<title>成长记录</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="growth.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+	<script src='iScroll.js'></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>成长记录</h1>
+	</header>
+	<section class="con_main" id="iScroll">
+		<div id='iScrollInner'>
+            <div class="m_set">
+                <div class="dou" id="info">任务记录</div>
+                <div class="dou" id="manage">邀请记录</div>
+                <div class="dou" id="login">发起记录</div>
+            </div>
+            <p class="p1">
+                <span class="red">当前成长状态</span>
+               <!-- <span><img id="member_pic" src="images/guan_02.png"/></span>-->
+                <span><img id="member_pic" /></span>
+                <span class="co" id='member_name'>金冠会员</span>
+            </p>
+            <!-- <p class="p1" id='other'>
+               <span>再邀请<em style="color:#fd4a25" id="next_num">123</em>个粉丝即可成为</span>
+                <span><img src="images/guan_01.png" id="next_pic"/></span>
+                <span class="h" id="next_type">皇冠会员</span>
+            </p>-->
+            <a href="javascript:;" class="long_btn long_btn_red" id="m_bottom">会员等级</a>
+	    </div>
+	</section>
+	<script src="growth.js"></script>
+</body>
+</html>

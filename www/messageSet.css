@@ -1,0 +1,38 @@
+﻿/*
+	消息设置样式
+*/
+
+.m_set{
+    width:100%;
+    min-height: 205px;
+    border-top: 1px solid #d6d2ca;
+    color:#2a2a2a;
+
+    background-color:#fff;
+    filter:Alpha(opacity=45);
+    background:rgba(255, 255, 255, 0.45) none repeat scroll 0 0 !important;
+}
+.m_set > div{
+    background-size: 16px;
+    border-bottom: 1px solid #d6d2ca;
+    line-height: 44px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.m_set > div > a{
+    color:#fb512d;
+    float:right;
+    padding-right:20px;
+}
+.m_set .dou{
+    background: url(images/next.png) no-repeat 95%;
+    background-size: 16px;
+    border-bottom: 1px solid #d6d2ca;
+    line-height: 44px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+#iScrollInner{
+	padding-bottom: 100px;
+}

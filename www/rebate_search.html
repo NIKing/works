@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>值得买</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="rebate_search.css">
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+	<header>
+        <a id="backBtn"></a>
+        <h1>搜索</h1>
+    </header>
+    <section class="con_main" id='iScroll'>
+		<div class="search">
+			<input type="text" id="keyWord" placeholder='请输入商品关键字'>
+            <div class="btn_search">
+                  <button id="btn_search"></button>
+            </div>
+          
+		</div>
+
+
+
+        <div id="warpper">
+            <div class="scrollInner">
+                <div id="thenList">
+                    
+                </div>
+
+                <div id="pullUp">
+                    <span class="pullUpIcon"></span>
+                    <span class="pullUpLabel">上拉刷新</span>
+                </div>
+            </div>
+        </div>
+        <div class="search_key">
+            <ul id="searchKeyWordsList">
+<!--                 <li>苹果5S</li>
+                <li>苹果5S</li>
+                <li>苹果5S</li>
+                <li>苹果5S</li>
+                <li>苹果5S</li> -->
+            </ul>
+            <div id="nores">暂无结果</div>
+        </div>
+
+    </section>
+    <script src="rebate_search.js"></script>
+</body>
+</html>

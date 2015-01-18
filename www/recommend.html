@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>我要推荐</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="recommend.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>我要推荐</h1>
+        <span id='rule' ev="wytj_top_guize">规则</span>
+    </header>
+    <section class="con_main">
+        <div class="top_nav">
+            <nav ev="wytj_top_zuixing">最新<img src="images/rank_desc.png"></nav>
+            <nav ev="wytj_top_redu">热度<img src="images/rank_desc.png"></nav>
+        </div>
+        <div id='iScroll' class="con_main">
+            <div class="scrollInner">
+                <ul>
+                  <!--  <li>
+                        <div class="">
+                            <img src="img/goods.jpg" class="goods_image" />
+                            <div class="goods_info">
+                                <span class="g_left">发布人&nbsp;<em>Calm</em></span>
+                                <span class='money'>￥189.00</span>
+                                <span class='time'><img src="images/love_hover.png"/>1234555</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <img src="img/goods.jpg" class="goods_image" />
+                            <div class="goods_info">
+                                <span class="g_left">发布人&nbsp;<em>Calm</em></span>
+                                <span class='money'>￥189.00</span>
+                                <span class='time'><img src="images/love_hover.png"/>1234555</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <img src="img/goods.jpg" class="goods_image" />
+                            <div class="goods_info">
+                                <span class="g_left">发布人&nbsp;<em>Calm</em></span>
+                                <span class='money'>￥189.00</span>
+                                <span class='time'><img src="images/love_hover.png"/>1234555</span>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+               <!-- <div class="more">
+                    <a href="javascript:;" id="moreBtn">点击加载更多</a>
+                </div>-->
+                <div id="pullUp">
+                    <span class="pullUpIcon"></span>
+                    <span class="pullUpLabel">上拉刷新</span>
+                </div>
+            </div>
+        </div>
+        <img src="images/issue.png" id='issueBtn' ev="wytj_issue"/>
+    </section>
+    <footer>
+        <nav class="hover" ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+    </footer>
+
+    <script src="recommend.js"></script>
+</body>
+
+</html>

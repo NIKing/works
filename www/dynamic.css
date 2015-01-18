@@ -1,0 +1,48 @@
+﻿/*
+	动态样式
+*/
+#scrollInner{
+	padding-bottom: 60px;
+}
+.time_wrap{
+	overflow: hidden;
+	font-size: 1.2em;
+	color: #1f1f1f;
+}
+.time_wrap:first-child{
+	margin-top: 22.5px;
+}
+.dot{
+	display: block;
+	float: left;
+	width: 4%;
+	min-width: 16px;
+	margin-left: 6%;
+}
+.time{
+	display: block;
+	float: left;
+	text-indent: 1em;
+}
+.con_wrap{
+	overflow: hidden;
+	width: 91%;
+	height: 100px;
+	margin-left: 8%;
+	padding-bottom: 10px;
+	border-left: 1px solid #baccc7;
+}
+.con{
+	width: 84%;
+	height: 60px;
+	margin-top: 15px;
+	margin-left: 5%;
+	padding-top: 10px;
+	padding-left: 4%;
+	border: 1px solid #c3d0ca;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.8);
+}
+.con em{
+	color: #fb512d;
+}

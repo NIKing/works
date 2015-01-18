@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>首页</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="index.css" />
+	
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+
+<div class="banner">
+    <img src='img/mi.jpg'>
+</div>
+	<h1 class="title">
+		<img src="images/title.png" alt="米米" />
+	</h1>
+	<section class='login_wrap'>
+		<input type="text" class="long_input" id="phoneNum" placeholder='手机' />
+		<input type="password" class="long_input" id="password" placeholder='密码' />
+        <div class="forgetpwd"><a href="password_find.html">忘记密码?</a></div>
+
+		<a href="javascript:;" class="long_btn long_btn_red" id="login" ev="btn_login">登录</a>
+		<!--<a href="regist.html" class="long_btn btn_transparent" id="regist">注册</a>-->
+        <a href="regist.html" class="long_btn long_btn_red" id="regist" ev="btn_reg">注册</a>
+	</section>
+	<!--<section class='forget_password' id='forgetPassswordBtn'>
+		<a href="password_find.html">忘记密码?</a>
+	</section>-->
+
+	<script src="index.js"></script>
+</body>
+</html>

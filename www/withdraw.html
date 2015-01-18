@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>提现</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="withdraw.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>提现</h1>
+    </header>
+    <section class="main" >
+        <div class="scrollInner">
+            <div class="total_money">
+                <span>历史提现额：  <em class="Num-type"  id="lishi"></em></span>
+            </div>
+            <input type="text" class="long_input" placeholder='请输入变现米币' id="integral" />
+            <!-- <input type="text" class="long_input" placeholder='请输入支付宝账号' id="account" /> -->
+            <div class="description">默认支付宝账号</div>
+            <div class="default_account">
+                <!-- <span id="name">Calm</span> -->
+
+                <span id="zhifubao"></span>
+                <span id="btn_showAlipay">
+                    <img id="showAlipayImg" src="images/back.png" alt="">
+                </span>
+            </div>
+            <div class="aliPayList" id='iScroll'>
+                <ul id="aliPayList">
+                   
+                </ul>
+            </div>
+            <div class="time">
+                <span>到账时间：</span>
+                <em>工作日两小时内到账（免费）</em>
+            </div>
+            <a href="javascript:;" class="long_btn btn_red" id="confirm" ev="tx_queren">确认转账</a>
+            <div class="explain">
+                <p>说明：转账米币将直接充值到您的支付宝账户上</p>
+                <p>
+                    <em>1</em>
+                    米币=
+                    <em>0.01</em>
+                    元
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="withdraw.js"></script>
+</body>
+
+</html>

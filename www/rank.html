@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>排行榜</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="rank.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src='tween.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>排行榜</h1>
+    </header>
+    <section class="con_main">
+        <ul>
+            <li style="border-left:0" class="light" id="type1" ev="phb_fenxiang">商品分享榜</li>
+            <li id="type2" ev="phb_jifen">积分榜</li>
+            <li id="type3" ev="phb_yaoqing">邀请榜</li>
+        </ul>
+       <!-- <div class="nav_wrap">
+            <nav>
+                <span class='hover'>商品分享榜</span>
+            </nav>
+            <nav>
+                <span>积分榜</span>
+            </nav>
+            <nav>
+                <span>邀请榜</span>
+            </nav>
+        </div>-->
+        <div id="iScroll">
+            <ul></ul>
+        </div>
+    </section>
+    <footer>
+        <nav class="hover" ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+    </footer>
+
+    <script src="rank.js"></script>
+</body>
+
+</html>

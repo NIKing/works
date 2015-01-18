@@ -1,0 +1,55 @@
+﻿/*
+	登录页样式
+*/
+
+.banner img{
+    width: 100%;
+    /*display: none;*/
+}
+
+h1{
+	padding-top: 85px;
+	text-align: center;
+}
+h1 img{
+	width: 27.5%;
+}
+.login_wrap{
+	padding-top: 65px;
+	text-align: center;
+}
+#phoneNum{
+	margin-bottom: 18px;
+}
+#password{
+	/*margin-bottom: 45px;*/
+}
+.forgetpwd{
+margin-bottom: 30px;
+margin-top: 10px;
+text-align: right;
+}
+.forgetpwd a{
+    margin-right: 6.25%;
+    border-bottom: 1px solid ;
+    color: #fc5c3a;
+}
+#login{
+	margin-bottom: 20px;
+}
+#regist{
+	border: none;
+}
+.forget_password{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.forget_password a{ 
+	color: #4c4c4c;
+}

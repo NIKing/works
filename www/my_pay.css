@@ -1,0 +1,67 @@
+﻿/*
+	消息设置样式
+*/
+
+.my_pay{
+    width:100%;
+    min-height: 70px;
+    border-top: 1px solid #d6d2ca;
+     border-bottom: 1px solid #d6d2ca;
+    color:#2a2a2a;
+    margin-top: 10px;
+    background-color:#fff;
+    filter:Alpha(opacity=45);
+    background:rgba(255, 255, 255, 0.45) none repeat scroll 0 0 !important;
+}
+.my_pay > div{
+    background-size: 16px;
+    /*border-bottom: 1px solid #d6d2ca;*/
+    line-height: 44px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.my_pay > div>img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:block;
+    float:left;
+    margin-top:10px;
+    margin-right: 10px;
+    /*border:1px solid #bbb9b9;*/
+}
+.my_pay > div>span{
+    display:block;
+    line-height: 25px;
+    padding-top:10px;
+}
+.color{
+    color:#6d6c6c;
+}
+.my_pay .dou{
+    background: url(images/next.png) no-repeat 95%;
+    background-size: 16px;
+    /*border-bottom: 1px solid #d6d2ca;*/
+    line-height: 70px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.t_shi{
+    line-height:25px;
+    text-indent: 24px;
+    padding:10px;
+    font-size:1.5em;
+}
+
+#scrollInner{
+	padding-bottom: 50px;
+}
+#pay_add{
+    position: absolute;
+    top: 10px;
+    left: 86%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}

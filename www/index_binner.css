@@ -1,0 +1,52 @@
+﻿/*
+	登录页样式
+*/
+
+.banner img{
+    width: 100%;
+}
+
+.banmain{
+    position: absolute;
+    top: 0 !important;
+    bottom: 0 !important;
+    overflow: hidden;
+    width: 100%;
+	padding-top:50px !important;
+	padding-bottom:150px !important;
+    min-height: 100px;
+}
+img{
+    width: 100%;
+}
+.bottompad {
+	height:46px;
+}
+.btngo0{
+    /* border: 2px solid red; */
+    height: 30px;
+    width: 130px;
+    /*margin-bottom: 20px;*/
+    position:relative;
+    bottom: 36px;
+    left: 180px;
+}
+.btngo1{
+/*    border: 2px solid red;*/
+    height: 30px;
+    width: 130px;
+    /*margin-bottom: 20px;*/
+    position:relative;
+    bottom: 56px;
+    left: 86px;
+}
+
+.btngo2{
+/*    border: 2px solid red;*/
+    height: 45px;
+    width: 130px;
+    /*margin-bottom: 20px;*/
+    position:relative;
+    bottom: 68px;
+    left: 95px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+	<title>会员等级</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="member_grade.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+	<script src='iScroll.js'></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>会员等级</h1>
+	</header>
+	<section class="con_main" id="iScroll">
+		<div id='iScrollInner'>
+           <!-- <p class="p1">
+                <span class="red">当前成长状态</span>
+                <span><img src="images/guan_01.png"/></span>
+                <span class="co">金冠会员</span>
+            </p>
+            <p class="p1">
+                <span>再邀请<em style="color:#fd4a25">123</em>个粉丝即可成为</span>
+                <span><img src="images/guan_02.png"/></span>
+                <span class="h">皇冠会员</span>
+            </p>-->
+            <p class="p1">
+                <span class="red">当前成长状态</span>
+                <span><img id="member_pic" src="images/guan_02.png"/></span>
+                <span class="co" id='member_name'></span>
+            </p>
+            <p class="p1" id='other' style="padding-top:0;">
+                <span>再邀请<em style="color:#fd4a25" id="next_num"></em>个粉丝即可成为</span>
+                <span><img src="images/guan_01.png" id="next_pic"/></span>
+                <span class="h" id="next_type"></span>
+            </p>
+            <div class="member">
+                <ul style="border-top:1px solid #ced0d0;">
+                    <li><img src="images/t_vip01.png"/></li>
+                    <li>铁牌会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px">注册后即成为</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip02.png"/></li>
+                    <li>铜牌会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px">下级会员达到50人</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip03.png"/></li>
+                    <li>银牌会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px">下级会员达到100人</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip04.png"/></li>
+                    <li>金牌会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px">下级会员达到200人</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip05.png"/></li>
+                    <li>白金会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px;line-height:23px;">下级会员达到500人，<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10000积分</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip06.png"/></li>
+                    <li>铂金会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px;line-height:23px;">下级会员达到1000人，<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20000积分</li>
+                </ul>
+                <ul>
+                    <li><img src="images/t_vip07.png"/></li>
+                    <li>钻石会员</li>
+                    <li style="border-right:none;width:49.9%;text-align:left;text-indent: 24px;line-height:23px;">下级会员达到3000人，<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40000积分</li>
+                </ul>
+            </div>
+	    </div>
+	</section>
+	<script src="member_grade.js"></script>
+</body>
+</html>

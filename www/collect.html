@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>我的收藏</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="collect.css"/>
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+<header>
+    <!-- <a id="backBtn"></a> -->
+    <h1>我的收藏</h1>
+</header>
+<section class="con_main" id='iScroll'>
+    <div class="scrollInner">
+        <!--<ul>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image"/>
+
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love_hover.png" class="love"/>
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+        </ul>-->
+        <!--<ul>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image" />
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love.png" class="love" />
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+            <li>
+                <div class="inner_border">
+                    <img src="img/goods.jpg" class="goods_image" />
+                    <div class='description'>韩国代购两件套一字领短袖条纹T恤女 高腰裙裤子韩版显瘦休闲套装</div>
+                    <div class="goods_info">
+                        <span class='money'>189.00</span>
+                        <img src="images/love.png" class="love" />
+                    </div>
+                    <div class="share_number">25638412人分享</div>
+                </div>
+            </li>
+        </ul>-->
+        <div id="pullUp">
+            <span class="pullUpIcon"></span>
+            <span class="pullUpLabel">上拉刷新</span>
+        </div>
+        <!--<div class="more">
+            <a href="javascript:;" id="moreBtn">点击加载更多</a>
+        </div>-->
+    </div>
+</section>
+<footer>
+        <nav ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav  class="hover" ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+</footer>
+
+<script src="collect.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>分享商品</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="share_goods.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="common.js"></script>
+    <script src="iscroll.js"></script>
+    <script src='tween.js'></script>
+
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>分享商品</h1>
+    </header>
+    <section class="index_main" id='iScroll'>
+        <div class="scrollInner">
+            <ul class="goods_share">
+                <!--<li>
+                    <span><img src="img/goods_01.jpg"/></span>
+                    <span>
+                        <h1>商品名称</h1>
+                        <p class="z_da"><img id="yang1" src="images/yang.png"/>198.00</p>
+                        <p><img id="diamond1" src="images/diamond.png"/>12548935人分享</p>
+                    </span>
+                    <span class="s_right">
+                        <p>分享得积分<b>1314</b></p>
+                        <p><button>分享</button></p>
+                    </span>
+                </li>
+                <li>
+                    <span><img src="img/goods_01.jpg"/></span>
+                    <span>
+                        <h1>商品名称</h1>
+                        <p class="z_da"><img id="yang2" src="images/yang.png"/>198.00</p>
+                        <p><img id="diamond2" src="images/diamond.png"/>12548935人分享</p>
+                    </span>
+                    <span class="s_right">
+                        <p>分享得积分<b>1314</b></p>
+                        <p><button>分享</button></p>
+                    </span>
+                </li>
+                <li>
+                    <span><img src="img/goods_01.jpg"/></span>
+                    <span>
+                        <h1>商品名称</h1>
+                        <p class="z_da"><img id="yang" src="images/yang.png"/>198.00</p>
+                        <p><img id="diamond" src="images/diamond.png"/>12548935人分享</p>
+                    </span>
+                    <span class="s_right">
+                        <p>返利积分<b>1314</b></p>
+                        <p><button>分享</button></p>
+                    </span>
+                </li>
+                <li>
+                    <span><img src="img/goods_01.jpg"/></span>
+                    <span>
+                        <h1>商品名称</h1>
+                        <p class="z_da"><img id="yang" src="images/yang.png"/>198.00</p>
+                        <p><img id="diamond" src="images/diamond.png"/>12548935人分享</p>
+                    </span>
+                    <span class="s_right">
+                        <p>返利积分<b>1314</b></p>
+                        <p><button>分享</button></p>
+                    </span>
+                </li>
+                <li>
+                    <span><img src="img/goods_01.jpg"/></span>
+                    <span>
+                        <h1>商品名称</h1>
+                        <p class="z_da"><img id="yang" src="images/yang.png"/>198.00</p>
+                        <p><img id="diamond" src="images/diamond.png"/>12548935人分享</p>
+                    </span>
+                    <span class="s_right">
+                        <p>返利积分<b>1314</b></p>
+                        <p><button>分享</button></p>
+                    </span>
+                </li>-->
+			</ul>
+        </div>
+    </section>
+    
+    <section class="shadow"></section>
+    <section class="share_wrap">
+        <ul>
+            <li>
+                <div>
+                    <img id="weixin_invite" src="images/weixin.png" ev="fxsp_share_weixin"/>
+                    <span>微信</span>
+                </div>
+                <div>
+                    <img id="sina_share" src="images/sina.png"  ev="fxsp_share_sinaweibo"/>
+                    <span>新浪微博</span>
+                </div>
+                <div>
+                    <img id="QQKJ_share" src="images/kongjian.png" ev="fxsp_share_qqspace"/>
+                    <span>QQ空间</span>
+                </div>
+                <div>
+                    <img id="friend_share" src="images/friend_qq.png" ev="fxsp_share_pengyouquan"/>
+                    <span>朋友圈</span>
+                </div>
+                <div>
+                    <img id="phone_invite" src="images/note.png" ev="fxsp_share_sms"/>
+                    <span>短信</span>
+                </div>
+                <div>
+                    <img id="renren_share" src="images/renren.png" ev="fxsp_share_renren"/>
+                    <span>人人网</span>
+                </div>
+                <div>
+                    <img id="QQ_share" src="images/qq.png" ev="fxsp_share_qq"/>
+                    <span>腾讯QQ</span>
+                </div>
+                <div>
+                    <img id="QQWB_share" src="images/weibo_qq.png" ev="fxsp_share_qqweibo"/>
+                    <span>腾讯微博</span>
+                </div>
+            </li>
+
+        </ul>
+        <div id="shareBtn">取消</div>
+        <!-- <a href="javascript:;" id="closeBtn">关闭</a> -->
+    </section>
+
+    <section class="wait_shadow">
+        <img src="images/wait.gif" />
+    </section>
+
+    <section class='guide_pic_wrap' id="guide" style="display: none">
+        <!--<img src='img/index_5.png' class='guide_pic' style='top:150px;left:42px;width:280px;' />-->
+        <img src='img/index_5.png' class='guide_pic' style='top:0;left:0;width:100%' />
+        <div style="height: 0px"><div class="guide_btn" id='guide_next'></div></div>
+        <!-- <a href='javascript:;' class='guide_next_btn' style='top:415px;left:30%;' id='guide_next'>下一步</a> -->
+    </section>
+
+    <script src="share_goods.js"></script>
+
+</body>
+</html>

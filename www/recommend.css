@@ -1,0 +1,239 @@
+﻿/*
+    广告赚钱页样式
+*/
+
+header span {
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    color: #fb512d;
+    font-size: 1.5em;
+}
+.top_nav {
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    border-top: 1px solid #d7d6d5;
+    border-bottom: 1px solid #d7d6d5;
+    background: rgba(255, 255, 255, 0.9);
+}
+.top_nav nav {
+    float: left;
+    width: 50%;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.2em;
+}
+.top_nav img {
+   /* background: url(images/arrow.png) no-repeat 75% center;*/
+/*    width: 6.5px;
+    vertical-align: middle;
+    height: 12px;
+    margin-left: 3px;
+    margin-top: -2px;*/
+
+    width: 9.5px;
+    vertical-align: middle;
+    /* height: 12px; */
+    margin-left: 3px;
+    margin-top: -2px;
+
+}
+.scrollInner {
+    padding: 35px 0 103px;
+}
+ul {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+li {
+    float: left;
+    width: 100%;
+    background: rgba(236, 247, 245, 1);
+    margin-top: 5px;
+    /*border-radius: 3px;*/
+}
+li.mLeft_none {
+    margin-left: 0px;
+}
+/*li:nth-child(2){
+    margin-left: 1%;
+}*/
+
+li .inner_border {
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+}
+.user_info {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.user_info img {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 4%;
+    margin-top: 7px;
+    border-radius: 22%;
+}
+.user_info span {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.user_info span em {
+    display: block;
+}
+.user_info span em:nth-child(1) {
+    font-size: 1.5em;
+}
+.user_info span em:nth-child(2) {
+    font-size: 1em;
+    color: #767676;
+}
+.goods_image {
+    width: 100%;
+    /*height: 110px;*/
+}
+.goods_info {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.g_left{
+    display:block;
+    float:left;
+    margin-left: 10px;
+    color:#737373;
+}
+.g_left>em{
+    color:#292929;
+}
+.money {
+    display: block;
+    float: left;
+    height: 15px;
+    margin-left: 6.25%;
+    /*background: url(images/yang.png) no-repeat 0 bottom;*/
+    background-size: 7px;
+    line-height: 15px;
+    text-indent: 10px;
+    font-size: 1.7em;
+    color: #fb512d;
+}
+.time {
+    display: block;
+    float: right;
+    margin-right: 6.25%;
+    font-size: 1.2em;
+    line-height: 20px;
+    color:#6a6867;
+}
+.time img{
+   display:block;
+   float:left;
+   width:23px;
+   padding-right:5px;
+
+}
+/*修改的部分开始*/
+
+.goods_love {
+    overflow: hidden;
+    margin: 15px 6.25% 8px;
+    font-size: 0.9em;
+    line-height: 20px;
+}
+.share_number {
+    float: left;
+    text-indent: 15px;
+    background: url(images/diamond.png) no-repeat 0 center;
+    background-size: 12.5px;
+}
+.praise {
+    float: right;
+}
+.praise img {
+    display: block;
+    float: left;
+    width: 18.5px;
+}
+.praise em {
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+/*修改的部分结束*/
+
+.more {
+    margin: 5px 0;
+    text-align: center;
+}
+.more a {
+    color: white;
+    font-size: 1.4em;
+}
+#issueBtn {
+    position: absolute;
+    /*top: 434px;*/
+    top: 40%;
+    left: 82%;
+    width: 12%;
+}
+
+/*上拉加载*/
+
+#pullDown, #pullUp {
+    background: rgba(255, 255, 255, 0.5);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(images/pull-icon@2x.png) 0 0 no-repeat;
+    background-size: 40px 80px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 250ms;
+}
+#pullDown .pullDownIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position: 0 100%;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -webkit-transition-duration: 0ms;
+    -webkit-animation-name: loading;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}

@@ -1,0 +1,96 @@
+﻿/*
+	资金管理样式
+*/
+header span{
+	position: absolute;
+	top: 15px;
+	right: 10%;
+	color: #fb512d;
+	font-size: 1.5em;
+}
+.scrollInner{
+	/*overflow: hidden;*/
+    padding-bottom: 60px;
+}
+.scrollInner>a{
+    margin: 20px auto;
+    display: block;
+}
+.num_wrap{
+	overflow: hidden;
+	padding: 10px 0;
+	border-top: 1px solid #dad6d3;
+	border-bottom: 1px solid #dad6d3;
+	background: rgba(255,255,255,0.5);
+	text-align: center;
+}
+.left{
+	float: left;
+	width: 49%;
+	height: 130px;
+}
+.right{
+	float: right;
+	width: 50%;
+	height: 130px;
+	border-left: 1px solid #dad6d3;
+}
+.num{
+	display: block;
+	padding-top: 25px;
+	color: #ed4135;
+    font-size: 3.4em;
+}
+.title{
+	display: block;
+	margin-left: 25%;
+	margin-top: 10px;
+	text-align: left;
+	text-indent: 25px;
+	font-size: 1.5em;
+	color: #505050;
+    height: 20px;
+}
+.current{
+	background: url(images/current.png) no-repeat 0 center;
+	background-size: 20px;
+}
+.history{
+	background: url(images/history.png) no-repeat 0 center;
+	background-size: 20px;
+}
+.info_wrap{
+	overflow: hidden;
+	margin-top: 15px;
+	border-bottom: 1px solid #cdd6d0;
+	background: rgba(255,255,255,0.5);
+}
+.info_wrap li{
+	height: 35px;
+	padding: 0 6.25%;
+	border-top: 1px solid #cdd6d0;
+	line-height: 35px;
+}
+.info_wrap span{
+	display: block;
+	float: left;
+	font-size: 1.4em;
+	color: #505050;
+}
+.info_wrap em{
+	display: block;
+	float: right;
+	font-size: 1.4em;
+	color: #ed4135;
+}
+.history_total{
+	margin-top: 30px;
+	margin-left: 6.25%;
+	background: url(images/history.png) no-repeat 0 center;
+	background-size: 15px;
+	text-indent: 20px;
+}
+#withdrawBtn{
+	display: block;
+	margin: 15px auto 0;
+}

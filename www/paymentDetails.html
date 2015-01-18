@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    
+    <meta name="format-detection" content="telephone=no"/>
+    
+    <title>收支明细</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="paymentDetails.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src='iscroll.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>收支明细</h1>
+    </header>
+    <section class="main">
+        <div class="p_details">
+            <ul>
+                <li style="border-left:0" class="light" id="type1">值得买</li>
+                <li id="type2">我要推荐</li>
+                <li id="type3">邀请</li>
+                <li id="type4">广告</li>
+                <li id="type5">赠送|索要</li>
+            </ul>
+            <div id="iScroll">
+                <ol id="content" class='iScrollInner'>
+                    <li>
+                       <p class="p_top"><strong>值得买</strong><b>+30积分</b></p>
+                       <p><i>推荐某某商品<em>100</em>个优币</em></i><em>20140627&nbsp;00:00</em></p>
+                   </li>
+               </ol>
+           </div>
+       </div>
+   </section>
+   <script src="paymentDetails.js"></script>
+</body>
+</html>

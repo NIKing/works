@@ -1,0 +1,381 @@
+﻿/*
+    公用样式
+*/
+
+html,body,div,h1,a,li,header,section,footer,
+em,input,button,ul,menu,dir,img,td,tr,table,p,br,hr,
+span,nav{
+    margin: 0;
+    padding: 0;
+    left:auto;
+	right:auto;
+	top:auto;
+	bottom:auto;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+em {
+    font-style: normal;
+}
+audio {
+    display: none;
+}
+html, body {
+    height: 100%;
+    min-height: 458px;
+}
+body {
+    background: url(images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    font-size: 62.5%;
+    font-family: '微软雅黑';
+    -webkit-font-smoothing: antialiased;
+}
+header {
+    position: relative;
+    z-index: 9;
+    height: 50px;
+	max-height:50px;
+	overflow:hidden;
+	margin: 0 !important;
+    padding: 0 !important;
+}
+header h1 {
+    text-align: center;
+	 width:100;
+    line-height: 50px;
+    font-size: 1.8em;
+    color: #fb512d;
+    background: rgba(255, 255, 255, 0.9);
+	height:100%;
+    margin: 0 !important;
+    padding: 0 !important;
+	/*
+	
+	margin:0;
+	padding:0;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	*/
+}
+header a#backBtn {
+    position: absolute;
+    width: 58px;
+    height: 50px;
+	max-height:50px;
+    background: url(images/back.png) center center no-repeat;
+    background-size: 17%;
+	overflow:hidden;
+	margin: 0 !important;
+    padding: 0 !important;
+	top:0 !important;
+	left:0 !important;
+}
+header a#header_searchIcon {
+	top:0 !important;
+	right:10px !important;
+}
+
+header span {
+	top:15px !important;
+}
+.main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*min-height: 518px;*/
+    padding: 50px 0 0;
+}
+.index_main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*min-height: 518px;*/
+    padding: 0 0 50px;
+}
+.con_main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*min-height: 480px;*/
+    padding: 50px 0 !important;
+}
+.banner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    /*min-height: 480px;*/
+    padding: 0 0;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+	left:0;
+	top:auto;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+}
+footer nav {
+    float: left;
+    width: 25%;
+    height: 50px;
+}
+footer span {
+    display: block;
+}
+footer span:nth-child(1) {
+    height: 25px;
+}
+footer .btn1 {
+    background: url(images/home.png) center bottom no-repeat;
+    background-size: 20px;
+}
+footer .hover .btn1 {
+    background: url(images/home_hover.png) center bottom no-repeat;
+    background-size: auto 20px;
+}
+footer .btn2 {
+    background: url(images/collectlogo.png) center bottom no-repeat;
+    background-size: auto 20px;
+}
+footer .hover .btn2 {
+    background: url(images/collect_hover.png) center bottom no-repeat;
+    background-size: auto 20px;
+}
+footer .btn3 {
+    background: url(images/fans.png) center bottom no-repeat;
+    background-size: 26px;
+}
+footer .hover .btn3 {
+    background: url(images/fans_hover.png) center bottom no-repeat;
+    background-size: auto 20px;
+}
+footer .btn4 {
+    overflow: hidden;
+    background: url(images/person.png) center bottom no-repeat;
+    background-size: 20px;
+}
+footer .hover .btn4 {
+    background: url(images/person_hover.png) center bottom no-repeat;
+    background-size: auto 20px;
+}
+footer span:nth-child(2) {
+    line-height: 25px;
+    text-align: center;
+    font-size: 0.9em;
+}
+footer .hover {
+    color: #f95e3d;
+}
+.long_input {
+    width: 84.5%;
+    height: 38px;
+    padding-left: 3.5%;
+    border: 1px solid #aaafad;
+    border-radius: 5px;
+    background: none;
+    font-size: 1.2em;
+    color: #6d6c6c;
+    outline: none;
+}
+.long_btn {
+    display: inline-block;
+    width: 88%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.short_btn {
+    display: inline-block;
+    width: 40%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.long_btn_red, .btn_red {
+    background: #fd5c3a;
+    color: #ffffff;
+}
+.btn_green {
+    background: #5AC712;
+    color: white;
+}
+.btn_gray {
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+}
+.btn_black {
+    background: #000000;
+    color: white;
+}
+.btn_transparent {
+    border: 1px solid #f75936;
+    color: #fd6c4d;
+}
+/*添加的部分*/
+
+.new_message_sign {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 5px 0 0 45px;
+    border-radius: 5px;
+    background: red;
+}
+.message_num {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 5px 0 0 55px;
+    border-radius: 9px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+}
+/*上拉加载*/
+
+#pullDown, #pullUp {
+    background: rgba(255, 255, 255, 0.5);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(images/pull-icon@2x.png) 0 0 no-repeat;
+    background-size: 40px 80px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 250ms;
+}
+#pullDown .pullDownIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position: 0 100%;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -webkit-transition-duration: 0ms;
+    -webkit-animation-name: loading;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}
+/*字体*/
+
+.Num-type {
+    font-weight: 600;
+    font-family: '新宋体';
+}
+/*等待信息*/
+
+.loading {
+    position: absolute;
+    z-index: 999;
+    background: rgba(100, 100, 100, 0.6);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+/*引导信息*/
+
+.guide_pic_wrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background: rgba(0, 0, 0, 0.5);
+}
+.guide_pic {
+    display: block;
+    position: absolute;
+}
+.guide_next_btn {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    background: #fd4a25;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.hdHeight70{
+    height: 70px;
+}
+.hdLineHeight70{
+    /*line-height: 70px;*/
+    padding-top: 20px;
+}
+.hdLblTop{
+    /*top:9px;*/
+    top: 19px;
+}
+.hdSpanTop{
+    top:35px;
+}
+.sectionPdTop{
+    padding-top: 70px;
+}

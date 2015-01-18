@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的粉丝</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="fans_direct.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src="iscroll.js"></script>
+	<script src="common.js"></script>
+	<script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>直接粉丝</h1>
+	</header>
+	<section class="con_main">
+		<div class="search_wrap">
+			<input type="text" id="searchContent" placeholder='请输入关键字' />
+			<a href="javascript:;" id="searchBtn"></a>
+		</div>
+        <div id="iScroll">
+            <div class="scrollInner seek">
+                <ul id="theListForFans">
+
+                </ul>
+                <div id="pullUp">
+                    <span class="pullUpIcon"></span>
+                    <span class="pullUpLabel">上拉刷新</span>
+                </div>
+            </div>
+			<!--<ul class="iScrollInner seek">
+                &lt;!&ndash;<li>暂无结果</li>&ndash;&gt;
+			</ul>-->
+		</div>
+	</section>
+
+	<script src="fans_direct.js"></script>
+</body>
+</html>

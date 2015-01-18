@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>首页</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="f_letter.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>发送站内信</h1>
+	</header>
+	<section class="main">
+		<div class="f_letter">
+            <p><span class="to">To：</span><span id="name">Kimi</span></p>
+			<textarea id="content" placeholder="请输入您需要发送的内容..."></textarea>
+			<a href="javascript:;" class="long_btn long_btn_red" id="m_top">发送</a>
+		</div>
+	</section>
+	<script src="f_letter.js"></script>
+</body>
+</html>

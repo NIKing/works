@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>发布</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="issue_step2.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery.form.js"></script>
+    <script src="notice.js"></script>
+    <script src="common.js"></script>
+    <script src="iscroll.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>发布</h1>
+    </header>
+    <section class="main" id='iScroll'>
+        <form method="POST" enctype="multipart/form-data" id="goodsForm">
+            <!-- <div class="goods_description">
+                <div class="goods_main">iphone</div>
+            </div>-->
+            <input type="hidden" name="name" />
+            <ul class="goods_info">
+                <li>
+                    <span>名称</span>
+                    <input type="text" class="long_input" autofocus="autofocus" id="goodsname" placeholder="商品名称，必填"/>
+                </li>
+                <li>
+                    <span>参考价格</span>
+                    <input type="text" class="long_input" name="price" id="price" placeholder="输入价格，必填"/>
+                    <!--<em>提示：1-100,1为起始价,100为最高价</em>-->
+                </li>
+                <li>
+                    <span>链接</span>
+                    <input type="text" class="long_input" name="url" id="url" placeholder="商品链接，选填"/>
+                    <!--<em>选填</em>-->
+                </li>
+            </ul>
+            <div class="upload_description">至少上传一张照片：</div>
+            <div class="photo_wrap">
+                <div class="input_wrap" style="height:0px;overflow:hidden;">
+                    <input type="file" name="pic1" id="pic1" _id="1"/>
+                    <input type="file" name="pic2" id="pic2" _id="2"/>
+                    <input type="file" name="pic3" id="pic3" _id="3"/>
+                    <input type="file" name="pic4" id="pic4" _id="4"/>
+                </div>
+                <a href="javascript:;" id="photoUpload">
+                    <img src="images/upload.png" />
+                </a>
+            </div>
+            <div class="description_wrap">
+                <span>描述</span>
+                <textarea id="description" name="description" placeholder="商品描述，必填"></textarea>
+            </div>
+            <a type="text" class="long_btn long_btn_red" id="complete">完成</a>
+        </form>
+    </section>
+
+    <section class="shadow">
+        <!-- <progress id="uploadProgress" min="0" max="100" value="0"></progress> -->
+        <img src="images/wait.gif" />
+    </section>
+
+    <script src="issue_step3.js"></script>
+</body>
+
+</html>

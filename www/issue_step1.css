@@ -1,0 +1,53 @@
+﻿/*
+	发布步奏一样式
+*/
+.search_wrap{
+	height: 50px;
+	border: 1px solid #d0d1d1;
+	background: rgba(255,255,255,0.5);
+	text-align: center;
+}
+.search_wrap input{
+	display: block;
+	float: left;
+	width: 66%;
+	height: 30px;
+	margin-left: 7.5%;
+	margin-top: 9px;
+	padding-left: 4%;
+	background: none;
+	border: 1px solid #c6c3c1;
+	border-radius: 5px;
+}
+.search_wrap a{
+	display: block;
+	float: left;
+	width: 15%;
+	height: 30px;
+	margin-top: 9px;
+	margin-left: 2.6%;
+	background: #fd4a25 url(images/search.png) no-repeat center center;
+	background-size: 19px;
+	border-radius: 5px;
+}
+.search_list{
+	max-height: 287px;
+	background: rgba(255,255,255,0.5);
+}
+.search_list ul{
+	margin-top: -1px;
+	border-top: 1px solid #d0d1d1;
+}
+.search_list li{
+	height: 40px;
+	padding-left: 6.25%;
+	border-bottom: 1px solid #d0d1d1;
+	line-height: 40px;
+	font-size: 1.5em;
+}
+#nextBtn{
+	display: block;
+	position: absolute;
+	left: 6%;
+	bottom: 85px;
+}

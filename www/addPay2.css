@@ -1,0 +1,16 @@
+﻿/*
+	添加支付宝1样式
+*/
+.add_pay{
+	padding-top: 20px;
+	border-top: 1px solid #d7d6d5;
+	text-align: center;
+}
+.t_left{
+    text-align: left;
+    color:#fb512d;
+    padding-left:20px;
+}
+.m_bottom{
+	margin-bottom: 15px;
+}

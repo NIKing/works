@@ -1,0 +1,232 @@
+﻿/*
+    消息提示样式
+*/
+
+header span {
+    position: absolute;
+    top: 0px;
+    right: 20%;
+    color: #fb512d;
+    font-size: 1.5em;
+    line-height: 50px;
+}
+header span>a {
+    display: block;
+    width: 60px;
+    color: #fb512d;
+    font-size: 1.1em;
+    background: none;
+}
+.main>ul {
+    width: 300px;
+    height: 28px;
+    margin: 13px auto 0;
+    border: 2px solid #fb512d;
+    border-radius: 5px;
+}
+/*.main>ul>li {
+    float: left;
+    width: 149px;
+    text-align: center;
+    line-height: 28px;
+    border-left: 2px solid #fb512d;
+    color: #fb512d;
+}
+.main>ul>li.light {
+    width: 149px;
+    background: #fb512d;
+    color: #fff;
+}*/
+.main>ul>li {
+    float: left;
+    width: 98px;
+    text-align: center;
+    line-height: 28px;
+    border-left: 2px solid #fb512d;
+    color: #fb512d;
+}
+#type1.light,#type2.light{
+    width: 98px;
+    background: #fb512d;
+    color: #fff;
+}
+#type3.light{
+    width: 100px;
+    background: #fb512d;
+    color: #fff;
+}
+/*.main>ul>li.light {
+    width: 98px;
+    background: #fb512d;
+    color: #fff;
+}*/
+/*.main>ul>li:nth-child(0).light,.main>ul>li:nth-child(1).light,.main>ul>li:nth-last-child(1).light {
+    width: 98px;
+    background: #fb512d;
+    color: #fff;
+}*/
+/*.main>ul>li:nth-child(2).light {
+    width: 98px;
+    background: #fb512d;
+    color: #fff;
+}*/
+#iScroll {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
+}
+aside>.ol1 {
+    width: 100%;
+}
+aside>.ol1>.li1 {
+    width: 100%;
+    min-height:80px;
+    height: auto;
+   /* height: 80px;*/
+    border-bottom: 1px solid #b6b6b0;
+    position: relative;
+}
+aside>.ol1>.li1> .i1{
+    display: block;
+    float: left;
+    width: 65%;
+    margin: 0 5px;
+    padding-top: 20px;
+    line-height: 33px;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+   text-overflow: ellipsis;
+    /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+/*添加的部分开始*/
+
+aside>.ol1>.li1>a {
+    clear: both;
+    display: block;
+    float: right;
+    margin-right: 6.25%;
+    margin-top: 5px;
+    color: #fb512d;
+}
+
+aside>.ol1>.li1> em {
+    display: block;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: right;
+    margin-right: 3%;
+    margin-top: 28px;
+    color: #fff;
+    background: #fd4a25;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+aside>.ol1>.li1>.sendask{
+    display: block;
+    width: 41px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    float: right;
+    margin-right: 3%;
+    margin-top: 28px;
+    color: #fff;
+    background: #fd4a25;
+    border-radius: 5px;
+   /* position: absolute;*/
+    right: 0;
+    top: 0;
+}
+
+aside>.ol1>.li1> .p1 {
+    position: absolute;
+    top: 58px;
+    left: 5px;
+}
+/*#iScrollInner{
+    padding-bottom: 100px;
+}*/
+
+
+aside>.ol2 {
+    width: 100%;
+}
+aside>.ol2>.li2 {
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    /* height: 80px; */
+    border-bottom: 1px solid #b6b6b0;
+    position: relative;
+
+}
+aside>.ol2>.li2> .i2 {
+    display: block;
+    /* float: left; */
+    width: 94%;
+    min-height: 22px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    line-height: 24px;
+    font-style: normal;
+    text-indent: 24px;
+    /* text-overflow: ellipsis; */
+
+}
+
+aside>.ol2>.li2> .p2 {
+    position: absolute;
+    bottom: 5px;
+    right: 3%;
+}
+
+
+
+/*aside>ul {
+    width: 100%;
+}
+aside>ul>li {
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    *//* height: 80px; *//*
+    border-bottom: 1px solid #b6b6b0;
+    position: relative;
+
+}
+aside>ul>li> i {
+    display: block;
+    *//* float: left; *//*
+    width: 94%;
+    min-height: 22px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    line-height: 24px;
+    font-style: normal;
+    text-indent: 24px;
+    *//* text-overflow: ellipsis; *//*
+
+}
+
+aside>ul>li> p {
+    position: absolute;
+    bottom: 5px;
+    right: 3%;
+
+}*/
+
+
+
+

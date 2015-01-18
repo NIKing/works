@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>启动</title>
+	<script src="jquery.js"></script>
+</head>
+<body style="background-image: url(images/bg.jpg);">
+	<div style="width:100%; font-family:微软雅黑; font-size:25px;text-align: center;margin-top:150px;text-shadow: black 0 1px 0; color:#FF6600">欢迎使用米米,加载ing..</div>
+</body>
+	<script>
+		localStorage.f_news = 0; //消息提醒记录清零--王志飞
+        /*localStorage.hostAddress = 'http://t1.wxwork.cn/'; //全局地址*/
+
+        //localStorage.hostAddress = 'http://mmm.fyhqy.com/'; //全局地址
+		
+		//如果登录过则自动登录
+		if (localStorage.phoneNum && localStorage.password) {
+			$.ajax({
+				url: localStorage.hostAddress + 'index.php?c=api&m=checklogin',
+				type: 'GET',
+				dataType: 'jsonp',
+				data: {
+					username: localStorage.phoneNum,
+					password: localStorage.password
+				}
+			}).done(function(data) {
+				if (!data.result) {
+					navigator.notification.alert('自动登录失败，请重新尝试', '', '失败', '返回登录');
+				} else {
+					setTimeout(function(){
+						window.location.href = 'home.html';
+					},2000);
+				};
+			}).fail(function() {
+				navigator.notification.alert('自动登录失败，请重新尝试', '', '失败', '返回登录');
+			});
+		} else {
+			setTimeout(function(){
+				window.location.href='index.html';
+			},4000);
+		};
+	</script>
+</html>

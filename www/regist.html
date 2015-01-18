@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+          <meta name="format-detection" content="telephone=no" />
+    <title>注册</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="regist.css"/>
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+
+<header>
+    <a id="backBtn"></a>
+
+    <h1>注册</h1>
+</header>
+<section class="main">
+    <!-- 		<div class="loading">
+                <img src="images/wait.gif" alt="">
+            </div> -->
+    <div class="regist_wrap">
+        <input type="text" class="long_input" id="phoneNum_invite" placeholder='请输入邀请码 / 为空则默认为系统邀请人'/>
+        <input type="text" class="long_input" id="phoneNum" placeholder='请输入您的手机号码'/>
+
+        <div>
+            <input type="text" class="long_input" id="securityCode" placeholder='请输入6位验证码'/>
+            <a href="javascript:;" id="getSeCode">获取验证码</a>
+        </div>
+        <div class="regist">
+            <input type='checkbox' id="registsure"> 我已阅读并同意 <a href="javascript:;" id="regist">米米注册协议</a>
+        </div>
+        <a href="javascript:;" class="long_btn long_btn_red" id="confirmBtn">确定</a>
+    </div>
+</section>
+
+<script src="regist.js"></script>
+</body>
+</html>

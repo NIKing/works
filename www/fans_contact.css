@@ -1,0 +1,52 @@
+﻿/*
+	首页样式
+*/
+#iScrollInner{
+	padding-bottom: 50px;
+}
+.description{
+	padding: 15px 0 0 6.25%;
+	font-size: 1.5em;
+}
+.description em{
+	color: #fb6044;
+}
+.user{
+	margin-top: 5px;
+}
+.user img{
+	display: block;
+    width: 75px;
+    height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+}
+.user span{
+	display: block;
+	width: 18%;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+}
+.fans_info{
+	overflow: hidden;
+	margin-top: 5px;
+	line-height: 35px;
+    font-size: 1.5em;
+}
+.fans_info .title{
+	display: block;
+	float: left;
+	width: 55%;
+	text-indent: 24%;
+}
+.fans_info .num{
+	display: block;
+	float: left;
+	text-indent: 1.5%;
+	border-left: 1px solid #839694;
+	color: #fc6145;
+}
+

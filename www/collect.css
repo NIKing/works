@@ -1,0 +1,151 @@
+﻿/*
+	我的收藏样式
+*/
+header span{
+	position: absolute;
+	top: 15px;
+	right: 10%;
+	color: #fb512d;
+	font-size: 1.5em;
+}
+.scrollInner{
+	padding: 0 0 103px;
+}
+/*ul{
+	overflow: hidden;
+	padding: 3px 1% 0;
+    -webkit-column-count: 2;
+}
+li{
+	float: left;
+    margin: 2px -1px;
+    width: 105%;
+	background: rgba(255,255,255,0.5);
+}*/
+ul{
+	overflow: hidden;
+	padding: 3px 1% 0;
+}
+li{
+	float: left;
+	width: 49.5%;
+	background: rgba(255,255,255,0.5);
+}
+li:nth-child(2){
+	margin-left: 1%;
+}
+li .inner_border{
+	border: 1px solid #c1c1c1;
+	border-radius: 3px;
+    position: relative;
+}
+.goods_image{
+	width: 100%;
+}
+.description{
+	margin-top: 2px;
+	padding: 0 3%;
+	text-indent: 2em;
+	line-height: 1.5em;
+	font-size: 1em;
+}
+.goods_info{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.money{
+	display: block;
+	float: left;
+	height: 15px;
+	margin-left: 6.25%;
+	background: url(images/yang.png) no-repeat 0 bottom;
+	background-size: 7px;
+	line-height: 15px;
+	text-indent: 10px;
+	font-size: 2em;
+	color: #fb512d;
+}
+.love{
+	display: block;
+	float: right;
+	width: 12%;
+	margin-right: 13%;
+}
+.share_number{
+	margin: 15px 6.25% 8px;
+	background: url(images/diamond.png) no-repeat 0 center;
+	background-size: 12.5px;
+	text-indent: 15px;
+	font-size: 0.9em;
+}
+.Qu_xiao{
+    margin: 15px 6.25% 8px;
+    background-size: 12.5px;
+    text-indent: 15px;
+    font-size: 0.9em;
+    color:#fb512d;
+
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+.more{
+	margin: 5px 0;
+	text-align: center;
+}
+.more a{
+	color: white;
+	font-size: 1.4em;
+}
+/*上拉加载*/
+
+#pullDown, #pullUp {
+    background: rgba(255, 255, 255, 0.5);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+    color: #888;
+}
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(images/pull-icon@2x.png) 0 0 no-repeat;
+    background-size: 40px 80px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 250ms;
+}
+#pullDown .pullDownIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+    -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+    background-position: 0 100%;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -webkit-transition-duration: 0ms;
+    -webkit-animation-name: loading;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>个人资料</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="personalData.css" />
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src='iScroll.js'></script>
+    <script src="common.js"></script>
+    <script src="jquery.form.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>我的资料</h1>
+    </header>
+    <section class="con_main" id="iScroll">
+
+        <div id="maskLayout" class="maskLayout maskLayoutHidder">
+        </div>
+        <div id="alterHeadPortrait" class="userInfo_cardPay photoMaskLayoutHeight  maskLayoutHidder">
+            <span id="PhotoSelect">从相册选</span>
+            <span id="photograph">拍照</span>
+        </div>
+        <div id="clearMaskLayout" class="maskLayoutHidder">
+            取消
+        </div>
+
+        <div id='iScrollInner'>
+            <div class="cl1">
+                <div class="cl1_img">
+                    <img id="pic" />
+                </div>
+            </div>
+            <div class="p_data">
+                <ul>
+                    <li>
+                        <span>昵称</span>
+                        <input id="nickname" type="text" disabled="disabled" />
+                    </li>
+                    <li>
+                        <span>省/市</span>
+                        <!--<input id="area" type="text" disabled="disabled" />-->
+                        <div class="s_Shi">
+                            <input id="sheng" type="text" value="省" />
+                            <input id="shi" type="text" value="市" />
+                        </div>
+                        <div class="s_xian" style="display:none">
+                            <ul class="red">
+                                <li>选择地区</li>
+                            </ul>
+                            <div id="scroller">
+                                <div>
+                                    <ul id="city">
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>广东</li>
+                                        <li>昆明</li>
+                                        <li>海南</li>
+                                        <li>山东</li>
+                                        <li>山西</li>
+                                        <li>湖南</li>
+                                        <li>湖北</li>
+                                        <li>江西</li>
+                                        <li>贵州</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p><img src="images/s_chu.png"/></p>
+                        </div>
+                    </li>
+                    <li>
+                        <span>详细地址</span>
+                        <input id="area" type="text" disabled="disabled" />
+                    </li>
+                    <li>
+                        <span>性别</span>
+                        <em id="sex">男</em>
+                        <label>
+                            <input type="radio" value="1" name="sex" checked="checked" />男
+                            <input type="radio" value="2" name="sex" />女
+                        </label>
+                    </li>
+                    <li>
+                        <span>个性签名</span>
+                        <input id="qianming" type="text" disabled="disabled" />
+                    </li>
+                </ul>
+                <div class="modify_btn_wrap">
+                    <a href="javascript:;" class="modify_btn">修改</a>
+                    <a href="javascript:;" class="sure_btn">确定</a>
+                    <a href="javascript:;" class="cancel_btn">取消</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shadow"></section>
+    <section class='modify info_modify'>
+        <span class='title'></span>
+        <input type="text" id="updateInput" />
+        <div class="btn_wrap">
+            <a href="javascript:;" id="cancel">取消</a>
+            <a href="javascript:;" id="confirm">确认</a>
+        </div>
+    </section>
+
+    <form method="POST" enctype="multipart/form-data" id="imgModify" style="height:0px;overflow:hidden">
+        <input type="file" id="imgInput" name="headpic" />
+    </form>
+
+    <section class="wait_shadow">
+        <img src="images/wait.gif" />
+    </section>
+    <script src="js/when.js"></script>
+    <script src="personalData_new.js"></script>
+</body>
+
+</html>

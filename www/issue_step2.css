@@ -1,0 +1,127 @@
+﻿/*
+	发布步奏二样式
+*/
+header{
+    position: absolute;
+    z-index: 9;
+    height: 50px;
+    width: 100%;
+}
+.main {
+    min-height: 468px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.main form {
+    padding: 0 0 100px;
+}
+.goods_main {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    text-overflow: ellipsis;
+}
+.goods_description {
+    height: 45px;
+    padding-left: 6.25%;
+    border-top: 1px solid #d6d5d4;
+    border-bottom: 1px solid #d6d5d4;
+    line-height: 45px;
+    color: #fd4a25;
+    font-size: 1.5em;
+}
+#complete {
+    display: block;
+    margin: 20px auto;
+}
+.goods_info li {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.goods_info span {
+    display: block;
+    float: left;
+    width: 22%;
+    padding-right: 6%;
+    text-align: right;
+    line-height: 35px;
+    font-size: 1.2em;
+}
+.goods_info input {
+    display: block;
+    float: left;
+    width: 60%;
+    height: 35px;
+}
+.goods_info>li> em {
+    ;
+    color: #2B62D6;
+    margin-left: 28%;
+}
+.upload_description {
+    padding-left: 6%;
+    line-height: 40px;
+    font-size: 1.2em;
+    color: #fd4a25;
+}
+.photo_wrap {
+    overflow: hidden;
+    padding-left: 6%;
+}
+.photo_wrap img {
+    float: left;
+    width: 20%;
+    height: 56px;
+    margin-right: 2%;
+    border: 1px solid #bec4c1;
+    border-radius: 5px;
+}
+.photo_wrap a {
+    display: block;
+    float: left;
+    width: 21%;
+}
+.photo_wrap a img {
+    width: 100%;
+    margin-right: 0;
+    border: none;
+    border-radius: 0;
+}
+.description_wrap {
+    overflow: hidden;
+    margin-top: 15px;
+}
+.description_wrap span {
+    display: block;
+    float: left;
+    width: 20%;
+    padding-right: 8%;
+    text-align: right;
+    color: #4f4f4f;
+    font-size: 1.2em;
+}
+#description {
+    display: block;
+    float: left;
+    width: 62.5%;
+    height: 150px;
+    background: none;
+    border: 1px solid #c3bbb4;
+    border-radius: 5px;
+    resize: none;
+}
+.shadow {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 19;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.shadow img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+}

@@ -1,0 +1,45 @@
+﻿/*
+	站内信样式
+*/
+.letter{
+	border-top: 1px solid #d7d6d5;
+	text-align: center;
+}
+.letter>ul{
+   width:100%;
+}
+.letter>ul>li{
+    width:100%;
+    min-height:80px;
+    height: auto;
+    border-bottom: 1px solid #b8d5cd;
+}
+.letter>ul>li>p{
+    text-align: left;
+    height:25px;
+    line-height: 25px;
+    padding:0 10px;
+    color: #6a6a6a;
+}
+.letter>ul>li>p>span{
+    display:block;
+    float:left;
+    color: #292929;
+    font-size:1.5em;
+}
+.letter>ul>li>p>em{
+    display:block;
+    float:right;
+}
+.letter>ul>li>p>em>img{
+    display:block;
+    width:18px;
+    height:18px;
+    padding-left:10px;
+    padding-top:4px;
+    float:right;
+}
+
+#scrollInner{
+    padding-bottom: 110px;
+}

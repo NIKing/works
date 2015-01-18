@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>值得买</title>
+    <link rel="stylesheet" href="rebate.css" />
+    <link rel="stylesheet" href="common.css">
+    <script src="cordova.js"></script>
+    <script src="jquery.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="common.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="backBtn"></a>
+        <h1>值得买</h1>
+        <a id="header_searchIcon" class="header_searchIcon">
+        </a>
+        
+    </header>
+    <section class="con_main">
+        <div class="top_nav">
+            <div id='classifyBtn'>
+                
+            </div>
+            <nav ev="zdm_top_jiage">价格
+                <img src="images/rank_desc.png">
+            </nav>
+            <nav ev="zdm_top_xiaoliang">销量
+                <img src="images/rank_desc.png">
+            </nav>
+            <nav ev="zdm_top_fenxiang">分享
+                <img src="images/rank_desc.png">
+            </nav>
+            <nav ev="zdm_top_shoucang">收藏
+                <img src="images/rank_desc.png">
+            </nav>
+        </div>
+        <div id="iScroll">
+            <div class="scrollInner">
+                <div id="pullUp">
+                    <span class="pullUpIcon"></span>
+                    <span class="pullUpLabel">上拉刷新</span>
+                </div>
+            </div>
+        </div>
+        <div class="classify_wrap">
+            <div class="classify_one" id="oneClassIScroll">
+                <ul></ul>
+            </div>
+            <div class="classify_two" id="twoClassIScroll">
+                <ul></ul>
+            </div>
+            <div class="clearIcons"></div>
+        </div>
+        <div class="shadow"></div>
+    </section>
+    <footer>
+        <nav class="hover" ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+    </footer>
+    <script src="rebate.js"></script>
+</body>
+
+</html>

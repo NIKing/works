@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>粉丝详情</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="fans_details.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src="iscroll.js"></script>
+	<script src="common.js"></script>
+	<script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn"></a>
+		<h1>粉丝详情</h1>
+		<div id="letter">
+			站内信
+		</div>
+	</header>
+	<section class="con_main" id='iScroll'>
+		<div id="scrollInner">
+			<div class="info_wrap">
+				<img id="fansPic" />
+				<span id='name'>Calm</span>
+				<span id='fansNum'>粉丝<em id="all">236</em>人</span>
+			</div>
+			<div class="num_info">
+				<span class='left_wrap'>
+					<span>
+						直接粉丝 <em id='fansNum_zj' class="Num-type">23</em>
+						人
+					</span>
+				</span>
+				<span>
+					关联粉丝 <em id='fansNum_gl'  class="Num-type">113</em>
+					人
+				</span>
+			</div>
+			<div class="info_details">
+				<ul>
+					<li>
+						<span>地区</span>
+						<span id="diqu">北京房山</span>
+					</li>
+					<li>
+						<span>个性签名</span>
+						<span id="qianming">北京房山</span>
+					</li>
+					<li>
+						<span>电话</span>
+						<span id="mobile">13843819438</span>
+					</li>
+					<li id='stateBtn'>
+						<span>个人动态</span>
+						<em>查看动态详情</em>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="long_btn btn_red" id="sentletter">发送站内信</a>
+		</div>
+	</section>
+
+	<script src="fans_details.js"></script>
+</body>
+</html>

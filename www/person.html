@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>个人中心</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="person.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src='iscroll.js'></script>
+    <script src="common.js"></script>
+    <script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<!-- <a id="backBtn"></a> -->
+		<h1>个人中心</h1>
+	</header>
+	<section class="con_main" id="iScroll">
+		<div id='iScrollInner'>
+			<div class="cl1">
+				<div class="cl1_img">
+					<img id="f_headpic" src="" alt="">
+				</div>
+				<div class="cl1_t1">
+					凯瑞
+				</div>
+				<div class="cl1_t2">
+					<img class="img" src="images/dot.png" alt="">
+					粉丝<span id="f_fensi"></span>人
+				</div>
+				<div class="cl1_bottom">
+					<div class="right bor" id="f_xiaoxitishi" ev="grzx_xiaoxitishi">
+						消息提示
+                        <span id="f_newscount"></span>
+					</div>
+					<div class="right" id="f_gerenzhongxin" ev="grzx_gerenziliao">
+						个人资料
+					</div>
+				</div>
+			</div>
+			<!--<div class="cl2">
+
+			</div>-->
+		    <div class="cl3">
+		    	<div class="dou" id="f_zijinguanli" ev="grzx_zijinguanli">资金管理</div>
+		    	<div class="dou" id="f_chengzhangjilu" ev="grzx_chenzhangjilu">成长记录</div>
+		    	<div class="dou" id="f_wodefensi" ev="grzx_wodefans">我的粉丝</div>
+		    	<div class="dou" id="f_wodeshoucang" ev="grzx_wodeshoucang">我的收藏</div>
+		    	<div class="dou" id="f_bangzhuzhongxin" ev="grzx_bangzhuzhongxin">帮助中心</div>
+		    </div>
+	    </div>
+	</section>
+	<footer>
+        <nav ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav  class="hover" ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+	</footer>
+
+	<script src="person.js"></script>
+</body>
+</html>

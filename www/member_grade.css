@@ -1,0 +1,86 @@
+﻿/*
+	成长记录样式
+*/
+
+.m_set{
+    width:100%;
+    min-height: 105px;
+    border-top: 1px solid #d6d2ca;
+    color:#2a2a2a;
+
+    background-color:#fff;
+    filter:Alpha(opacity=45);
+    background:rgba(255, 255, 255, 0.45) none repeat scroll 0 0 !important;
+}
+.m_set > div{
+    background-size: 16px;
+    border-bottom: 1px solid #d6d2ca;
+    line-height: 44px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.m_set > div > a{
+    color:#fb512d;
+    float:right;
+    padding-right:20px;
+}
+.m_set .dou{
+    background: url(images/next.png) no-repeat 95%;
+    background-size: 16px;
+    border-bottom: 1px solid #d6d2ca;
+    line-height: 44px;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.p1{
+    padding:10px 0 0 20px;
+    height: 35px;
+    line-height: 33px;
+}
+.p1>span{
+    display:block;
+    float:left;
+}
+.p1>span.red{
+    color:#fd4a25;
+}
+.p1>span.co{
+    color:#915f03;
+}
+.p1>span.h{
+    color:#8d4804;
+}
+.p1>span>img{
+    display:block;
+    width:35px;
+    padding:0 5px 0 5px;
+}
+.member{
+    width:100%;
+}
+.member>ul{
+    width:100%;
+}
+.member>ul>li{
+    width:24.7%;
+    height:50px;
+    float:left;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(255,255,255,0.6);
+    border-bottom:1px solid #ced0d0;
+    border-right:1px solid #ced0d0;
+
+}
+.member>ul>li>img{
+    display:block;
+    width:40px;
+    padding-top:6px;
+    padding-left:26%;
+    
+}
+
+
+#iScrollInner{
+	padding-bottom: 100px;
+}

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的粉丝</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="fans.css" />
+	<script src="cordova.js"></script>
+	<script src="jquery.js"></script>
+	<script src="iscroll.js"></script>
+	<script src="common.js"></script>
+	<script src="notice.js"></script>
+</head>
+<body>
+	<header>
+		<a id="backBtn" style="display: none"></a>
+		<h1>我的粉丝</h1>
+		<span ev="fans_shuoming">说明</span>
+	</header>
+	<section class="con_main" id='iScroll'>
+		<div id="iScrollInner">
+			<div class="info_wrap">
+				<!-- <img src="img/fans.png" id="fansPic" /> -->
+				<img id="fansPic" />
+				<span id='name'></span>
+				<span id='fansNum'></span>
+			</div>
+			<div class="num_info">
+				<span class='left_wrap'>
+					<span>
+						直接粉丝 <em id="fans_dir" class="Num-type"></em>
+						人
+					</span>
+				</span>
+				<span>
+					关联粉丝 <em id="fans_con" class="Num-type"></em>
+					人
+				</span>
+			</div>
+			<div class="nav_wrap">
+				<nav id="fans1" ev="fans_guanlianfans">
+					<img src="images/about_fans.png" />
+					<span>关联粉丝</span>
+				</nav>
+				<nav id="fans2" ev="fans_zhijiefans">
+					<img src="images/direct_fans.png" />
+					<span>直接粉丝</span>
+				</nav>
+				<nav id="fans3" ev="fans_yaoqinghaoyou">
+					<img src="images/friend.png" />
+					<span>邀请好友</span>
+				</nav>
+				<nav id="fans4" ev="fans_woyaoqingde">
+					<img src="images/invitor.png" />
+					<span>我的邀请人</span>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<footer>
+        <nav ev="tab_home">
+            <span class='btn1'></span>
+            <span>首页</span>
+        </nav>
+        <nav ev="tab_favorite">
+            <span class='btn2'></span>
+            <span>我的收藏</span>
+        </nav>
+        <nav class="hover"  ev="tab_fans">
+            <span class='btn3'></span>
+            <span>我的粉丝</span>
+        </nav>
+        <nav ev="tab_user_center">
+            <span class='btn4'></span>
+            <span>个人中心</span>
+        </nav>
+	</footer>
+
+	<script src="fans.js"></script>
+</body>
+</html>
