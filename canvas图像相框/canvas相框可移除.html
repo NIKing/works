@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		body,html,ul,li,h1,h5,a,p,span,div{
+			margin: 0px;
+			padding: 0px;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.wrap{
+			position: relative;
+			margin:40px;
+			width: 1000px;
+			height: 400px;
+			background-color: #fff;
+			box-shadow: 0px 0px 1px 1px #eee;
+		}
+		.imgWrap,
+		.photoWrap{
+			width: 100px;
+			height: 380px;
+			float: left;
+			border: 1px solid #ccc;
+			margin:10px 40px 10px 40px;
+			text-align: center;
+		}
+		.imgWrap img{
+			width: 60px;
+			height: 100px;
+		}
+		.photoWrap img{
+			width: 90px;
+			height: 140px;
+		}
+		.photoWrap_canvas{
+			position: absolute;
+			/*opacity: 0.4;*/
+			width: 300px;
+			left: 365px;
+			height: 400px;
+			/*background-color: red;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="photoWrap_canvas" id="photoWrap_canvas" >
+		
+		</div>
+		<canvas id="myCanvas" width="300" height="400"  style="background-color:#ccc"></canvas>
+		<div class="photoWrap" id="photoWrap">
+			<ul>
+				<li><img  src="img/xk1.png" alt=""></li>
+				<li><img  src="img/xk2.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="imgWrap">
+			<ul>
+				<li><img   src="img/mm1.jpg" alt=""></li>
+				<li><img   src="img/mm2.jpg" alt=""></li>
+				<li><img   src="img/mm3.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div>
+			<input type="text" id="txtKey">
+			<button id="btnAddFont">输入</button>
+			<button id="btnOk">完成</button>
+			<button id="btnReset">还原</button>
+		</div>
+	</div>
+	
+	<script src="js/zepto.js"></script>
+	<script>
+
+			var _ = function(selector){return document.getElementById(selector);}
+			var util = {
+				isNull:function(str){return str == null || str.length == 0 }
+			}
+			var c = _("myCanvas");
+			var ctx = c.getContext("2d");
+			var ctxW = c.width,
+				ctxH = c.height;
+
+			var img = new Image();
+				img.src = "img/mm2.jpg";
+			var imgW,imgH;
+
+			img.onload=function(){
+
+				imgW = 300 || img.width,
+				imgH = 400 || img.height;
+
+				// 把canvas的原点设置为图片的中心点，但是现实的时候，要还原，否则图片会已左上角钉在canvas的中心点上
+				ctx.translate(imgW /2,imgH/2);
+
+				onDraw();
+
+				ctx.save();
+			}
+
+			function onDraw(){
+
+				// 这是清除图片因为平移而造成的痕迹，-ctxw是图片平移的反方向的位置，2*ctxW，是清除的面积
+				ctx.clearRect(- ctxW,-ctxH, 2 * ctxW, 2 * ctxH);
+				// ctx.clearRect(-ctxW,-ctxH,ctxW,ctxH);
+
+				// -imgW/2 是为了让图片显示的回复正常，因为上面显示的时候做了旋转
+				ctx.drawImage(img,-imgW / 2, -imgH / 2,300,400);
+			}
+
+			// 切换相册
+			$(".photoWrap").delegate("ul li img","click",function(){
+				var src = $(this).attr("src");
+				// console.log(src);
+
+				$(".photoWrap_canvas").css("background","url("+src+") no-repeat").css("background-size","100% 100%").attr("data-url",src);
+			})
+			// 完成
+			var newxCtx;
+			$("#btnOk").click(function(){
+				    newCanvas = document.createElement('canvas');
+					newCanvas.width = 300;
+					newCanvas.height = 400;
+					newxCtx = newCanvas.getContext("2d");
+
+				var img = new Image();
+					img.src = $(".photoWrap_canvas").attr("data-url");
+				img.onload=function(){
+
+					$(".photoWrap_canvas").hide();
+
+					// var x = (-ctxW / 2) - offsetX_ctx,
+					// 	y =  (-ctxH / 2) - offsetY_ctx;
+					// console.log(offsetX_ctx,offsetY_ctx);
+					newxCtx.drawImage(c,0,0);
+					newxCtx.drawImage(img,0,0,300,400);  //-ctxW /2, -ctxH / 2
+
+					$(".wrap").prepend(newCanvas);
+				}
+			})
+
+			// 还原
+			$("#btnReset").click(function(){
+				ctx.restore();
+			})
+			// 添加文字
+			$("#btnAddFont").click(function(){
+				var val = $("#txtKey").val();
+				if(val == null || val.length == 0) return;
+				if(util.isNull(newxCtx)) return;
+
+				newxCtx.font="40px Arial";
+				newxCtx.fillText(val,50,100);
+			})
+
+			// 注册鼠标滚轮事件,,暂时只做除去  firfox之外的浏览器
+			window.onmousewheel = document.onmousewheel = scrollFnc;
+
+			var scale = 1;
+			function scrollFnc(ev){
+				var delta = ev.wheelDelta;
+				if(delta > 0 && scale <= 5){	//滚轮向上
+					scale += 0.1;
+				}else if(delta < 0 && scale >= 1){
+					scale -= 0.2;
+				}
+				ctx.scale(scale,scale);
+				onDraw();
+			}
+
+
+			// 移动相册的动作
+			var hasTouch = 'ontouchstart' in window;
+			// console.log(window);
+			var STA_EN = hasTouch ? "touchstart" : "mousedown",
+				MV_EV = hasTouch ? "touchmove":"mousemove",
+				END_EV = hasTouch ? "touchend" : "mouseup",
+				END_Cancel = hasTouch ? "touchcancel" : "mouseout";
+
+			_("photoWrap_canvas").addEventListener(STA_EN,start,false);
+			_("photoWrap_canvas").addEventListener(MV_EV,move,false);
+			_("photoWrap_canvas").addEventListener(END_EV,end,false);
+			_("photoWrap_canvas").addEventListener(END_EV,end,false);
+
+			var bStart = 0;
+
+			var bginX,bginY,startX = 0,startY = 0;
+
+			var offsetX_ctx = 0,offsetY_ctx = 0;
+
+			function start(ev){
+				// console.log("32")
+				ev.preventDefault();
+				bStart = 1;
+
+				var poi = getEvtLocation(ev);
+
+				// console.log(poi.x,poi.y);
+				bginX = poi.x;
+				bginY = poi.y;
+
+				// startX = bginX;
+				// startY = bginY;
+			}
+
+			function move(ev){
+				ev.preventDefault();
+
+				if(bStart === 0)return;
+
+				var poi = getEvtLocation(ev);
+
+				var offsetX = poi.x - bginX,
+					offsetY = poi.y - bginY;
+
+
+				ctx.translate(offsetX,offsetY);
+				onDraw();
+
+				bginX = poi.x;
+				bginY = poi.y;
+			}
+			function end (ev) {
+				// body...
+				ev.preventDefault();
+
+				bStart = 0;
+				var poi = getEvtLocation(ev);
+
+
+				// 为了防止用户再次移动，所有偏移值就要累加
+				// offsetX_ctx += poi.x - startX;
+				// offsetY_ctx += poi.y - startY;
+				// console.log(poi.x+"<"+poi.y);
+			}
+			function getEvtLocation(ev){
+				if(util.isNull(ev)) return;
+				// var touch = ev.touches[0];
+
+				return{
+					x : ev.offsetX,
+					y : ev.offsetY
+				}
+			}
+
+	</script>
+</body>
+</html>
